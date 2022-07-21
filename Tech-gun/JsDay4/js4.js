@@ -81,3 +81,14 @@
 
 
 // ######################################################### String Manuplation ##########################################################\\
+
+// 1.length of string 
+let str = "This is a Devolper";
+console.log(str.length); // output : 18
+
+if("This is a Devolper" === str){
+    console.log("equals");
+}
+else{
+    console.log("!equals");
+}
