@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transformation</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 60vh;
+
+        }
+      .box{
+          /* background-color: yellow; */
+          border: 2px solid black;
+          /* transform: translate(121px , 222px) rotate(90deg); */
+          /* transform: scalex(1); */
+          /* transform: scaley(3); */
+          transform-origin: 0;
+           /* transform: skew(5deg ,24deg); */
+           display: inline-block;
+           /* transform: matrix(2,1,1,1,1,1); */
+           transform: translate(122px, 33px);
+           
+          
+          
+      }
+      img{
+          width: 40px;
+          transition-property: width;
+          transition-duration: 3s;
+          transition-timing-function: ease-in-out;
+          transition-delay: 0s;
+          /* transition: all 2s ease-out 1s; */
+      }
+      #myImage:hover {
+          width: 586px;
+      } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="bg.jpg" width="150px" alt="itachi sir"><button id="btn">Toggle</button></div>
+            
+    </div>
+</body>
+<!-- <script>
+     myImage.style.width= "40px";
+    btn.addEventListener("click" ,function(e){
+       
+        if( myImage.style.width == "40px")
+        myImage.style.width= "440px";
+        else if (myImage.style.width == "440px")
+        myImage.style.width= "40px";
+        
+        
+    }) -->
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+<style>
+        *{
+            font-family: fantasy;
+
+        }
+        #first{
+                      background-color: gray;
+                      font-style: italic;    
+                      /* id select using # in css */
+        }
+        #second{
+             background: rgb(10, 7, 9);
+             color: aliceblue;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .red{
+            background-color: red;
+            color: white;
+            /* only using one same class name we change properties of multiple element */
+        }
+        .red.blue{
+            color: blue;
+            /* using . we select class */
+        }
+    </style>

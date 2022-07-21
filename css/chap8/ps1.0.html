@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progressBar{
+            /* background-color: red; */
+            height: 2px;
+            width: 53vh;
+          transition-property: width;
+          transition-duration: 3s;
+          transition-timing-function: ease-in-out;
+          transition-delay: 0s;
+          transform: origin 0; 
+        }
+        .progressBar:hover {
+               width: 100vw;
+               background-color: red;
+        }
+        header{
+            background-color: aqua;
+            height: 40px;
+            
+        }
+        main{
+            background-color: yellow;
+            height: 90vh;
+        }
+        @keyframes rotate {
+           0%{
+            transform: rotate(0deg);
+           }
+           100%{
+            transform: rotate(360deg);
+           }
+        }
+        img{
+            /* transform: rotate(160deg); */
+            animation-name: rotate;
+            animation-duration: x1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="progressBar">
+
+    </div>
+    <header>
+
+    </header>
+    <main>
+     <img src="dragon.png" alt="img" width="240px">
+    </main>
+</body>
+</html>

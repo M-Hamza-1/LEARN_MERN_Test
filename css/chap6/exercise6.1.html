@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+              margin: 0;
+              padding: 0;
+          }
+        header{
+            background-color: aqua;
+            height: 40px;
+            /* color: white; */
+            display: flex;
+            justify-content: flex-end;
+            padding: 7px;
+            position: relative;
+          
+            
+        }
+        ul{
+            
+            padding: 8px;
+        }
+        li{
+            list-style: circle inside url(bg.png);
+            padding: 5px;
+list-style: none;
+display: inline;
+border: 2px solid white;
+margin-right: 4px;
+background-color: white;
+border-radius: 5px;
+            
+            
+        }
+        .container{
+          display: flex;
+          justify-content: space-between;
+        }
+        .box1{
+            background-color: orange;
+            height: 100vh;
+            width: 80vh;
+
+        }
+        .box2{
+            background-color: green;
+            height: 100vh;
+            width: 80vh;
+            /* order: -1; */
+
+        }
+        .img{
+            height: 31px;
+width: 53px;
+background-image: url("bg.jpg");
+border: 2px solid;
+border-radius: 50px;
+background-size: cover;
+background-repeat: no-repeat;
+position:absolute;
+top: 8px;
+left: 5px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Course</li>
+                <li>Contact</li>
+            </ul>
+            <div class="img"></div>
+        </div>
+    </header>
+
+
+    <div class="container"><div class="box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci, assumenda explicabo veniam modi dolore ipsum magni aspernatur velit, quisquam minus ducimus aperiam tempore optio culpa beatae. Blanditiis, quod dolores?</div><div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatem, voluptatum quidem soluta recusandae totam esse consequatur doloribus commodi a modi iure veniam dolor quam placeat nam aspernatur nesciunt cupiditate?</div></div>
+    
+</body>
+</html>

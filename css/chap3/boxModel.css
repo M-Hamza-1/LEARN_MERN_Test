@@ -1,0 +1,15 @@
+   *{       padding: 0;
+        margin: 0;
+    }
+    .content{
+          height: 320px;
+          width: 520px;
+          background: #000;
+          color: white;
+          margin: 5px 6px;
+          padding: 10px;
+        border: 10px solid rgb(255, 0, 0) ; 
+        border-left: dashed;
+        border-radius: 25px;
+
+    }

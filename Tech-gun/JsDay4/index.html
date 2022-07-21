@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js4</title>
+<!-- ############################# Pop up Boxes : alert() , promt() , confirm(); ##################################-->
+<script>
+    
+    // alert(); ==> used for showing msg to the user
+   alert("hello this is pop up from alert");
+
+
+  // promt used for taking user input . if user did'nt press any input then it retuns null
+   let name = prompt("Enter name" , "John Doe"); // john doe showes by default every time in box
+   if(name !== null){
+    document.write("Your name is :" , name.bold());
+  document.write("<br>"); 
+   }
+   else{
+    document.write("Please enter you name first");
+ document.write("<br>"); 
+   }
+
+
+   // confirm => used for confirmation msg in the screen to the user if user press yes then return true else false
+
+   let response  = confirm('Do you want to delete your data ?'); 
+   
+     if(response === true){
+      document.write("\n Your data is succesfully deleted");
+     }
+     else{
+        document.write("Your data is securd in good hand ! Don't worry");
+     }
+
+
+ </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+style>
+    *{
+        background-color: blueviolet;
+    }
+    h1{
+        background: #000;
+        color: aliceblue;}
+        p{
+            background-color: blue;
+            color: aliceblue;
+            padding-left: 0cm;
+        }

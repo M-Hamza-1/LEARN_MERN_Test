@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web with harry sir</title>
+</head>
+<body>
+    <hr>
+    <!-- this is first comment -->
+    <h1>This is first website</h1>
+    <!-- h1 or p is child of body tag -->
+    <p>this is first paragraph</p>
+    <h2>This is second heading</h2>
+    <h3>this is third heading</h3>
+    <h4>this is third heading</h4>
+    <h5>this is third heading</h5>
+    <h6>this is third heading</h6>
+     <hr>
+    <!-- all sub heading are smaller than privious one -->
+    <a href="/about.html">this is index.html</a>   <!--this is relative link -->
+    <a href="https://nados.io/auth/login">nados</a><!--this is absolute  link -->
+    <br>
+    <hr>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" width="300" alt="this is img">
+   <br>
+     <!-- i tag use for italic font same b for bold and u for underline -->
+     <hr>
+    <i>this is italic font</i>
+    <br>
+    <b>this is bold text</b>
+    <br>
+    <!-- br tag use for new line -->
+    <u>this is underline text</u>
+    <br>
+    <hr>
+    <!-- big and small tags for font size  -->
+     <big> this </big>
+   <small>This is small tag</small>
+   <!-- sub and sup tags  -->
+   <!-- sub tag use for randering base value in equation -->
+   <hr>
+     <p>H<sub>2</sub>+ O = H<sub>2</sub>O</p>
+    <!-- sup tag use for randering power of equation -->
+    <p>(a + b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>+2ab</p>
+    
+    <!-- pre tags use for print content as it is how we type in ide -->
+    <hr>
+       <pre>
+             <b> //C++ recursive function to
+              // solve tower of hanoi puzzle</b>
+              #include <bits/stdc++.h>
+              using namespace std;
+        
+              void towerOfHanoi(int n, char from_rod,
+                            char to_rod, char aux_rod)
+        {
+            if (n == 0)
+            {
+                return;
+            }
+            towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+            cout << "Move disk " << n << " from rod " << from_rod <<
+                                        " to rod " << to_rod << endl;
+            towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
+        }
+        
+        // Driver code
+        int main()
+        {
+            int n = 4; // Number of disks
+            towerOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
+            return 0;
+        }
+        
+        // This is code is contributed by rathbhupendra
+        </pre>
+        <hr>
+</body>
+    </html>
