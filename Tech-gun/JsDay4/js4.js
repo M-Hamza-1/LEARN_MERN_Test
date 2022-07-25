@@ -34,7 +34,7 @@
 
 // ##################################################### type conversion in Js #############################################################\\
 /*
-1 : Automatic type while interpretaion happend 
+1 : Automatic type conversion while interpretaion happend 
 2 : Manual with using : Number(); 
                         String();
                         Boolean(); 
@@ -106,7 +106,7 @@ console.log(str2); // output : -1 // BECAUSE JS is case senstive Indexof  , inde
 // if same more substring available  in string then need give index check from here
 str = "hey indexof This is a indexof() function in JavaScript indexof ";
 str2 = str.indexOf("indexof", 10); // provding idx for need after this idx number's subtring idx number 
-console.log(str2); // output : 10 // count start from 0 idx  in Js as well
+console.log(str2); // output : 22 // count start from 0 idx  in Js as well
 
 
 // 5. for finding idx number from last of index : String.lastIndexof();
@@ -122,8 +122,8 @@ console.log(str2); // output : -1 // BECAUSE there is no lastIndexOf in string
 
 // if same more substring available  in string then need give index check from here
 str = "hey indexof This is a lastIndexOf() function in JavaScript lastIndexOf ";
-str2 = str.indexOf("lastIndexOf", 47); // provding idx for need  to check after 47  idx number's subtring idx number 
-console.log(str2); // output : 59 // 
+str2 = str.indexOf("lastIndexOf", 10); // provding idx for need  to check after 47  idx number's subtring idx number 
+console.log(str2); // output : 22 // 
 
 // 6. for removing extra white sapce from string : => String.trim();
  

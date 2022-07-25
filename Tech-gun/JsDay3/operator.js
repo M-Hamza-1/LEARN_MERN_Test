@@ -128,7 +128,7 @@ isNaN() retrun true if value is NaN.
 
 
 // we have option ${} to print a variable and string print together with in qoutes using tilde ``
-
+// string interpolation
 // let agent = {
 //    name : "Bond",
 //    age :   100,

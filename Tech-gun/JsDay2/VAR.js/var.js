@@ -9,7 +9,7 @@
   // }
   // hello();
   // alert(y); 
-   // it will give error becuse y hello function level scope only
+   // it will give error becuse y has hello function level scope only
 
    // in var re -declartion is possible with the same name
   //  var x =" i am new x now";  // the x is alerdy decleard in program . there for var is not good at here
@@ -19,8 +19,8 @@
 
    // --------------------------------------- Hosting of var ---------------------------------------------\\
 
-   // hosting  js machnism where variable and function decration  moved at top from their scope before code exicution.
-  //  console.log(greetings); // in var it will give error
+   // hosting  js machnism where variable and function decleration  moved at top from their scope before code exicution.
+  //  console.log(greetings); // in var it will => undefined 
   //  var greetings ="hello var";
 
 
@@ -36,7 +36,7 @@
 
    //----------------------------------------------------------let -----------------------------------------------------\\
 
-   // var has some issue the in ES6 const and let come into picture \\
+   // var has some issue then in ES6 const and let come into picture \\
 
    // let is {} block scpoed
 
@@ -58,7 +58,7 @@
 // ----------------------------------------- Hosting of let ---------------------------------------\\
 //  hosting  js machnism where variable and function decration  moved at top from their scope before code exicution.
 // console.log(greeting);
-// let greeting ="let hosting example"; // ReferenceError: Cannot access 'greeting' before initialization but gives undeinded here 
+// let greeting ="let hosting example"; // ReferenceError: Cannot access 'greeting' before initialization but var gives undeinded here 
 
 
 //   -------------------------------------------------- Const ------------------------------------------------------------\\
@@ -68,8 +68,8 @@
 // const name ; // SyntaxError: Missing initializer in const declaration
 
 // const  name  =" devesh ";
-// console.log(name);  // hello
-// name = "mehra";    //TypeError: Assignment to constant variable.
+// console.log(name);  // devesh
+ // name = "mehra";    //TypeError: Assignment to constant variable.
 
 // const obj ={
 //   name : "devesh",
