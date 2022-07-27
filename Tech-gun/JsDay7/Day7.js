@@ -99,34 +99,78 @@ eg: let obj ={name : "devesh"}
 
 // getter => using getter object methods can be accessable like other properties also maluplation can be done
 
-const obj = {
-               name : "Swati",
-                age : 33,
-                genedr : "female",
-                get getMethod(){
-                    return this.name.toUpperCase();  // mauplating as well
-                }
-}
+// const obj = {
+//                name : "Swati",
+//                 age : 33,
+//                 genedr : "female",
+//                 get getMethod(){
+//                     return this.name.toUpperCase();  // mauplating as well
+//                 }
+// }
 
-// accessing without method way =>
-// console.log(obj.getMethod()); // output => TypeError: obj.getMethod is not a function
+// // accessing without method way =>
+// // console.log(obj.getMethod()); // output => TypeError: obj.getMethod is not a function
 
-console.log(obj.getMethod); // output => SWATI  ( accessing like other propeties and manuplation)
+// console.log(obj.getMethod); // output => SWATI  ( accessing like other propeties and manuplation)
 
 
 // setter => used for change a vaule of object
 
-const SetObj = {
-                 name : "rahul roy",
-                 age : 36,
-                 gender : "male",
-                 set setMethod(x){
-                          return this.name = x.toUpperCase();
-                 }
+// const SetObj = {
+//                  name : "rahul roy",
+//                  age : 36,
+//                  gender : "male",
+//                  set setMethod(x){
+//                           return this.name = x.toUpperCase();
+//                  }
 
 
-}
+// }
 
-SetObj.setMethod ="vijay raaj"
-// setting and manupalting the value using setter in object method
-console.log(SetObj);  // output => { name: 'VIJAY RAAJ', age: 36, gender: 'male', setMethod: [Setter] }
+// SetObj.setMethod ="vijay raaj"
+// // setting and manupalting the value using setter in object method
+// console.log(SetObj);  // output => { name: 'VIJAY RAAJ', age: 36, gender: 'male', setMethod: [Setter] }
+
+
+
+
+
+
+
+// ################################################# object consrtcutor #############################################################################\\
+
+/* 
+ contrcutor used as an templet for similar type of multiple object.. when we need same type of property in multiple object
+ */
+// How declare a contrcutor => there is a constructor of student type.
+ function Student(Name , Class , Age , rollNo){ 
+         this.NAME = Name;
+         this.CLASS = Class;
+         this.AGE = Age;
+         this.ROLLno = rollNo;
+ }
+ // how to use this => we make multipr student type object using this tapmlet
+ 
+ let student1 = new Student("shyam" , 12 , 16 , 1991110011002); // here student object is build with thsee perameter vaules 
+ console.log(student1); // outout => Student { NAME: 'shyam', CLASS: 12, AGE: 16, ROLLno: 1991110011002 }
+
+ let student2 = new Student("Kanchan" , 10 , 14 , 38); // another same object
+ console.log(student2); // output => Student { NAME: 'Kanchan', CLASS: 10, AGE: 14, ROLLno: 38 }.
+
+ // change the value od those object.
+
+ student1.AGE = 17;
+ student1.NAME = "vjiay Raaj"
+ console.log(student1);   // outout => Student { NAME:'vjiay Raaj, CLASS: 12, AGE: 17, ROLLno: 1991110011002 }
+
+ // how add new value in contstructor => // ReferenceError:
+
+ Student.GENDER = "gender";  // ReferenceError: gender is not defined 
+
+  console.log(Student);  // we can't add new property in constructor like this
+
+  student2.GENDER ="FeMale" // this possible 
+  console.log(student2);  // output => Student { NAME: 'Kanchan', CLASS: 10, AGE: 14, ROLLno: 38 ,  GENDER: 'FeMale'}.
+
+
+//*********************************************************************************************************************************************************/
