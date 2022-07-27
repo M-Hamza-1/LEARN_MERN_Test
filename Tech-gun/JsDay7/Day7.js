@@ -139,78 +139,78 @@ eg: let obj ={name : "devesh"}
 
 // ################################################# object consrtcutor #############################################################################\\
 
-/* 
- contrcutor used as an templet for similar type of multiple object.. when we need same type of property in multiple object
- */
-// How declare a contrcutor => there is a constructor of student type.
- function Student(Name , Class , Age , rollNo){ 
-         this.NAME = Name;
-         this.CLASS = Class;
-         this.AGE = Age;
-         this.ROLLno = rollNo;
- }
- // how to use this => we make multipr student type object using this tapmlet
+// /* 
+//  contrcutor used as an templet for similar type of multiple object.. when we need same type of property in multiple object
+//  */
+// // How declare a contrcutor => there is a constructor of student type.
+//  function Student(Name , Class , Age , rollNo){ 
+//          this.NAME = Name;
+//          this.CLASS = Class;
+//          this.AGE = Age;
+//          this.ROLLno = rollNo;
+//  }
+//  // how to use this => we make multipr student type object using this tapmlet
  
- let student1 = new Student("shyam" , 12 , 16 , 1991110011002); // here student object is build with thsee perameter vaules 
- console.log(student1); // outout => Student { NAME: 'shyam', CLASS: 12, AGE: 16, ROLLno: 1991110011002 }
+//  let student1 = new Student("shyam" , 12 , 16 , 1991110011002); // here student object is build with thsee perameter vaules 
+//  console.log(student1); // outout => Student { NAME: 'shyam', CLASS: 12, AGE: 16, ROLLno: 1991110011002 }
 
- let student2 = new Student("Kanchan" , 10 , 14 , 38); // another same object
- console.log(student2); // output => Student { NAME: 'Kanchan', CLASS: 10, AGE: 14, ROLLno: 38 }.
+//  let student2 = new Student("Kanchan" , 10 , 14 , 38); // another same object
+//  console.log(student2); // output => Student { NAME: 'Kanchan', CLASS: 10, AGE: 14, ROLLno: 38 }.
 
- // change the value od those object.
+//  // change the value od those object.
 
- student1.AGE = 17;
- student1.NAME = "vjiay Raaj"
- console.log(student1);   // outout => Student { NAME:'vjiay Raaj, CLASS: 12, AGE: 17, ROLLno: 1991110011002 }
+//  student1.AGE = 17;
+//  student1.NAME = "vjiay Raaj"
+//  console.log(student1);   // outout => Student { NAME:'vjiay Raaj, CLASS: 12, AGE: 17, ROLLno: 1991110011002 }
 
- // how add new value in contstructor => // ReferenceError:
+//  // how add new value in contstructor => // ReferenceError:
 
- Student.GENDER = "gender";  // ReferenceError: gender is not defined 
+//  Student.GENDER = "gender";  // ReferenceError: gender is not defined 
 
-  console.log(Student);  // we can't add new property in constructor like this
+//   console.log(Student);  // we can't add new property in constructor like this
 
-  student2.GENDER ="FeMale" // this possible 
-  console.log(student2);  // output => Student { NAME: 'Kanchan', CLASS: 10, AGE: 14, ROLLno: 38 ,  GENDER: 'FeMale'}.
-
-
-//*********************************************************************************************************************************************************/
+//   student2.GENDER ="FeMale" // this possible 
+//   console.log(student2);  // output => Student { NAME: 'Kanchan', CLASS: 10, AGE: 14, ROLLno: 38 ,  GENDER: 'FeMale'}.
 
 
-// Prototype in js => used for add new property in the constructor. || in Js protoype is supperclass  
-
-Student.prototype.nationality =" Indian";
-console.log(student1.nationality); // output :  Indian
-console.log(student2.nationality); // output :  Indian
+// //*********************************************************************************************************************************************************/
 
 
-let student3 = new Student("shyam", 12, 16, 1991110011002);
-console.log(student3.nationality); //// output :  Indian
+// // Prototype in js => used for add new property in the constructor. || in Js protoype is supperclass  
+
+// Student.prototype.nationality =" Indian";
+// console.log(student1.nationality); // output :  Indian
+// console.log(student2.nationality); // output :  Indian
 
 
-// ################################################## Nested object in Js ############################################################\\
+// let student3 = new Student("shyam", 12, 16, 1991110011002);
+// console.log(student3.nationality); //// output :  Indian
 
-// object inside objects 
 
-const user = {
-               id : "iam_NightBot",
-            email : "xyz@gmail.com",
-            info : {            // this is nested object
-                     name : "Rahul roy",
-                     age : 26,
-                     gender : "male",
-                     address : { // this is also nested object here
-                        city : "kasol",
-                        state : "Himanchal Pardesh",
-                        pin : 363401,
-                        fun(){
-                            console.log(`this function  belongs to ${user.id} user`);
-                        }
-                     }
-            }
-}
+// // ################################################## Nested object in Js ############################################################\\
 
-// how access =>
- console.log(user.info);
+// // object inside objects 
+
+// const user = {
+//                id : "iam_NightBot",
+//             email : "xyz@gmail.com",
+//             info : {            // this is nested object
+//                      name : "Rahul roy",
+//                      age : 26,
+//                      gender : "male",
+//                      address : { // this is also nested object here
+//                         city : "kasol",
+//                         state : "Himanchal Pardesh",
+//                         pin : 363401,
+//                         fun(){
+//                             console.log(`this function  belongs to ${user.id} user`);
+//                         }
+//                      }
+//             }
+// }
+
+// // how access =>
+//  console.log(user.info);
  /* output=>
     {
   name: 'Rahul roy',
@@ -224,4 +224,90 @@ const user = {
   }
 } 
   */
- console.log(user.info.address.fun()); // output => this function  belongs to iam_NightBot user
+//  console.log(user.info.address.fun()); // output => this function  belongs to iam_NightBot user
+
+
+ // ############################################################### Hoisting In JS ###################################################################
+ 
+// hosting  js machnism where variable and function decleration  moved at top from their scope by interpreter.
+
+ // hoisting with function =>
+
+
+//  hello(); // output => hello this is hoiesting example in js 
+ 
+//  function hello(){
+//    console.log("hello this is hoiesting example in js"); 
+//  }
+/*
+ // it will not give the error becuse => how its works at the of inperpretaion function decleartion come at top
+function hello(){
+ 
+   console.log("hello this is hoiesting example in js"); 
+ }
+hello(); 
+
+*/
+
+// hoisting with var => var x ; come into top at the time of interpretaion
+
+// console.log(x); // output => undefined
+
+// var x =7;
+
+/*
+ how its works Bts => var x come in top;
+
+ var x;
+ x = undefinde ;
+
+console.log(x);
+
+x=7;
+
+*/
+
+// (hoisteing with let and const ) => let comes to the top as declere statement but gives error
+
+// console.log(y);  // output =>ReferenceError: Cannot access 'y' before initialization
+
+// let y =7;
+/*
+   how its works Bts =>
+
+    let y ;
+   // let not asign here undefined like var therefore error occures.
+    console.log(y);
+
+    y = 7;
+     
+*/
+
+// console.log(z);  // output => ReferenceError: Cannot access 'z' before initialization
+
+// const z =2;
+
+
+
+// ################################################################ Strict mode in js #########################################################################
+
+// x =5;
+// console.log(x); // outout => 5 it will not give any error in js
+
+/*
+    How it works in js => berfore the code exicution js interpreter  move the top all varialbe decleartion and function as per thier scope.
+    And declare them as well.
+    
+    var x;
+    x=5;
+    console.log(x);
+
+
+*/
+
+// Some time its problmatic for code so we user ( "use strict " ) inside double qoutes and single
+
+// Now it gives error
+"use strict";
+x =6;
+console.log(x); // output => ReferenceError: x is not defined  

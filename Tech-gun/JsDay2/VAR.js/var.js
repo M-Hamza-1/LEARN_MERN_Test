@@ -17,7 +17,7 @@
 
 
 
-   // --------------------------------------- Hosting of var ---------------------------------------------\\
+   // --------------------------------------- Hoisting of var ---------------------------------------------\\
 
    // hosting  js machnism where variable and function decleration  moved at top from their scope before code exicution.
   //  console.log(greetings); // in var it will => undefined 
@@ -55,7 +55,7 @@
 // let name ="mehra"; // SyntaxError: Identifier 'name' has already been declared
       
 
-// ----------------------------------------- Hosting of let ---------------------------------------\\
+// ----------------------------------------- Hoisting of let ---------------------------------------\\
 //  hosting  js machnism where variable and function decration  moved at top from their scope before code exicution.
 // console.log(greeting);
 // let greeting ="let hosting example"; // ReferenceError: Cannot access 'greeting' before initialization but var gives undeinded here 
