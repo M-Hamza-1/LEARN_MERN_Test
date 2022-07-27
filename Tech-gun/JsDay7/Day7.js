@@ -174,3 +174,54 @@ eg: let obj ={name : "devesh"}
 
 
 //*********************************************************************************************************************************************************/
+
+
+// Prototype in js => used for add new property in the constructor. || in Js protoype is supperclass  
+
+Student.prototype.nationality =" Indian";
+console.log(student1.nationality); // output :  Indian
+console.log(student2.nationality); // output :  Indian
+
+
+let student3 = new Student("shyam", 12, 16, 1991110011002);
+console.log(student3.nationality); //// output :  Indian
+
+
+// ################################################## Nested object in Js ############################################################\\
+
+// object inside objects 
+
+const user = {
+               id : "iam_NightBot",
+            email : "xyz@gmail.com",
+            info : {            // this is nested object
+                     name : "Rahul roy",
+                     age : 26,
+                     gender : "male",
+                     address : { // this is also nested object here
+                        city : "kasol",
+                        state : "Himanchal Pardesh",
+                        pin : 363401,
+                        fun(){
+                            console.log(`this function  belongs to ${user.id} user`);
+                        }
+                     }
+            }
+}
+
+// how access =>
+ console.log(user.info);
+ /* output=>
+    {
+  name: 'Rahul roy',
+  age: 26,
+  gender: 'male',
+  address: {
+    city: 'kasol',
+    state: 'Himanchal Pardesh',
+    pin: 363401,
+    fun: [Function: fun]
+  }
+} 
+  */
+ console.log(user.info.address.fun()); // output => this function  belongs to iam_NightBot user
