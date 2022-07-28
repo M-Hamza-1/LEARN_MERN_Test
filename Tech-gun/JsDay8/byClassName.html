@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : ElmByClassName</title>
+</head>
+<body>
+<ul>
+   <li class="list">Hello this is byclassName list1</li>
+   <li>Hello this is byclassName list2</li>
+   <li class="list">Hello this is byclassName list3</li>
+   <li class="list">Hello this is byclassName list4</li>
+</ul>
+
+
+    <script>
+// getElementByClassName :
+  let elm  = document.getElementsByClassName("list");
+  console.log(elm);
+ 
+  /*
+     output : HTMLCollection(3) [li.list, li.list, li.list] // collection of three list . its behave like array now.
+
+   */
+  console.log(elm.length); // output : 3
+// accessing the each list =>
+for(let i=0; elm.length; i++){
+    elm[i].innerHTML =" hello this is new text";
+}
+
+/* 
+output :
+hello this is new text
+Hello this is byclassName list
+hello this is new text
+hello this is new text
+
+*/
+
+    </script>
+</body>
+</html>
