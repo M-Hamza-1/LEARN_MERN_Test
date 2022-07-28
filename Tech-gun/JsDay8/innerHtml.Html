@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom : innerHTML</title>
+</head>
+<body>
+    <div id="innerHTML">
+        <p>hello this is a p tag</p>
+    </div>
+    <script>
+        // innerHTML => its a property of obejct not a method . 
+        // its use for get data and set data.
+
+
+        // get =>
+          let elm  = document.getElementById("innerHTML");
+            let innerData = elm.innerHTML; 
+             console.log(innerData);
+                            /*
+                                output :    <p>hello this is a p tag</p> 
+                            */
+
+          // set =>
+          elm.innerHTML ="<h1> Hello this is heaading by innerHTML </h1>"   
+                            /*
+                                output : <h1> Hello this is heaading by innerHTML </h1>
+                            */
+
+    </script>
+</body>
+</html>
