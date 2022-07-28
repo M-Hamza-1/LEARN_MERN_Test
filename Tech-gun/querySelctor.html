@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : query.Selecor/SelectorAll</title>
+</head>
+<body>
+ <ul><li class="query">this is the list1</li>
+    <li class="query">this is the list2</li>
+    <li class="query"> <p>this is the list3</p></li>
+    <li class="query"> <p>this is the list3</p></li>
+    <li class="query"> <p>this is the list3</p></li></ul>
+<script>
+    // query selector : select first element mactched with the parameter
+    let elm = document.querySelector(".query ");
+    console.log(elm); // output : this is the list1 
+    // after changing innerHTML => this is the slected elm by querySelector
+    elm.innerHTML = "<b> this is the slected elm by querySelector"
+
+
+
+    // query selectorAll : seelcts the collection only.
+    elm = document.querySelectorAll(".query p");
+    console.log(elm.length); // OUTPUT : 3
+    for (let i = 0; i < elm.length; i++) {
+        elm[i].innerHTML =" <I>these are changed by query selectorALL "
+    }
+    /*
+       OUTPUT : 
+this is the slected elm by querySelector
+this is the list2
+these are changed by query selectorALL
+
+these are changed by query selectorALL
+
+these are changed by query selectorALL
+    */
+</script>
+</body>
+</html>
