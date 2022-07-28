@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom :elmByID</title>
+</head>
+<body>
+    <li id="list1">hello this is list1</li>
+    <li>Hello this is list2</li>
+    <li>Hello this is list3</li>
+
+    <script>
+ // get object by getElementById();
+let elm = document.getElementById("list1");
+console.log(elm); // output : <li id="list1">hello this is list1</li>
+
+// get and set value by  => innerHTML
+//get => inner value
+console.log(elm.innerHTML ); // output : hello this is list1
+
+// set => inner value
+elm.innerHTML = "<p>hello i am in p tag now </p> "
+console.log(elm); 
+/*
+   output :
+   <li id="list1">
+    <p>hello i am in p tag now </p>
+    </li>
+*/
+    </script>
+</body>
+</html>
