@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : Traversing Elements in Js </title>
+</head>
+<body>
+    <ul>
+        <li>This is a child 1</li>
+        <li id="ID_01">This is a child 2</li>
+        <li>This is a child 3</li>
+        <li>This is a child 4</li>
+        <li>This is a child 5</li>
+    </ul>
+    <ul id="sibling">
+        <li>This is a sibling 1</li>
+        <li id="second">This is a sibling 2</li>
+        <li>This is a sibling 3</li>
+        <li>This is a sibling 4</li>
+        <li>This is a sibling 5</li>
+    </ul>
+    <script>
+// child to paraent element => node.parentElement;
+let beta = document.getElementById("ID_01");
+console.log(beta); // output =>    <li id="ID_01">This is a child 2</li>
+
+
+let baap = beta.parentElement;
+console.log(baap);
+/*
+// <ul> is paraent element of list2
+    Output : <ul>
+            <li>This is a child 1</li>
+            <li id="ID_01">This is a child 2</li>
+            <li>This is a child 3</li>
+            <li>This is a child 4</li>
+            <li>This is a child 5</li>
+             </ul> 
+*/
+
+
+
+ baap.innerHTML = "hello" 
+ console.log(baap); // output : <ul> hello </ul>
+
+// paraent to child => FirstElementChild (for first one)|| lastElementChild (for last one)|| .children (for all child element)
+
+
+    let Dad = document.getElementById("sibling");
+    console.log(Dad);
+ 
+/*
+             output =>      <ul id="sibling">
+                                <li>This is a sibling 1</li>
+                                <li id="second">This is a sibling 2</li>
+                                <li>This is a sibling 3</li>
+                                <li>This is a sibling 4</li>
+                                <li>This is a sibling 5</li>
+                            </ul>
+  
+ */
+
+// 1 FirstElementChild  =>
+ let Son = Dad.firstElementChild;
+ console.log(Son); //Output : <li>This is a sibling 1</li>
+ 
+ // 2 lastElementChild =>
+
+let lastSon = Dad.lastElementChild;
+console.log(lastSon); // Output :  <li>This is a sibling 5</li>
+
+// all childrens =>
+
+let Children = Dad.children;
+console.log(Children);
+
+/* 
+        Output :    <li>This is a sibling 1</li>
+                    <li>This is a sibling 2</li>
+                    <li>This is a sibling 3</li>
+                    <li>This is a sibling 4</li>
+                    <li>This is a sibling 5</li>
+*/
+
+
+// Sibling element to siblings => .previousElementSibling  (previous one sibling element) || .nextElement (next sibling element)
+
+// previousElementSibling
+let chota = document.getElementById("sibling")
+console.log(chota);
+/*
+             output =>      <ul id="sibling">
+                                <li>This is a sibling 1</li>
+                                <li>This is a sibling 2</li>
+                                <li>This is a sibling 3</li>
+                                <li>This is a sibling 4</li>
+                                <li>This is a sibling 5</li>
+                            </ul>
+  
+ */
+
+
+let bada = chota.previousElementSibling;
+console.log(bada);          // output :   <ul> hello </ul>
+
+
+// nextElementSibling : => retruns the next sibilng element
+
+
+let ULchild = document.getElementById("second");
+console.log(ULchild);        // output : <li id="second">This is a sibling 2</li>
+
+let nextBro = ULchild.nextElementSibling;
+console.log(nextBro);       // output :  <li>This is a sibling 3</li>
+    </script>
+</body>
+</html>
