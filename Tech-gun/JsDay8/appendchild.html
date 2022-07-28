@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : appendChild || createElement || textContent || createtextNode </title>
+</head>
+<body>
+    <div id="intro">
+
+        <p class="p"> Hello this is p tag</p>
+    </div>
+
+    <script>
+    // create new h1 and element inside the div. 
+    let div = document.getElementById("intro");
+
+    let newElm = document.createElement("h1");  // new element created , using createElement() method
+    div.appendChild(newElm);   // adding element inside div container
+    console.log(div);  
+    /*
+      output :   <div id="intro">
+                 <h1></h1>
+                   <p> Hello this is p tag</p>
+                 </div>
+    */
+
+  // Adding inside the h1 element.
+
+  let text = document.createTextNode("hello this text from createTextNode");
+  newElm.appendChild(text); // adding text inside the h1
+/*  
+                 output : Hello this is p tag
+
+                          hello this text from createTextNode
+
+*/
+
+// Add text using text content property =>
+ newElm.textContent ="hello text Content"
+ 
+/*  
+                 output : Hello this is p tag
+
+                          hello this text from createTextNode
+
+*/
+ 
+// innerText =>
+let p = document.querySelector('p').innerText =" hello this text from innerText";
+ 
+/*  
+                 output :   hello this text from innerText
+
+                          hello this text from createTextNode
+
+*/
+ 
+
+    </script>
+</body>
+</html>
