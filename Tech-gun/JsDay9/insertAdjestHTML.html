@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : insertadjacentelement</title>
+</head>
+<body>
+    <div class="inro">
+    <h2>This is a heading 2 by default</h2>
+    <h2>This is a heading 2 by default</h2>
+    <h2>This is a heading 2 by default</h2>
+    <h2>This is a heading 2 by default</h2>
+ 
+    </div>
+    <script>
+ /* 
+   insertadjacentelement : has 4 position to add new html in page 
+                  synatx : insertAdjacentElement(position, element)
+                           1 : beforebegin => before the target element 
+                           2 : afetbegin =>   after the  target element              
+                           3 : beforeend =>   before the  end target element              
+                           4 : afterend =>   after the  end target element    
+                                     
+
+ */
+
+ // beforebegin => 
+
+ let target  = document.querySelector("div")
+
+ let newHtml = "<h1>Hey i am beforebegin</h1>"
+ target.insertAdjacentHTML("beforebegin" , newHtml);
+ /* 
+ Hey i am beforebegin
+This is a heading 2 by default
+This is a heading 2 by default
+This is a heading 2 by default
+This is a heading 2 by default
+ 
+ */
+
+
+ // beforebegin => 
+
+ 
+
+ newHtml = "<h1>Hey i am afetbegin</h1>"
+ target.insertAdjacentHTML("beforebegin" , newHtml);
+
+ /* 
+ Hey i am beforebegin
+Hey i am afetbegin
+This is a heading 2 by default
+This is a heading 2 by default
+This is a heading 2 by default
+This is a heading 2 by default
+ 
+ */
+
+
+ newHtml = "<h1>Hey i am beforeend</h1>"
+ target.insertAdjacentHTML("beforeend" , newHtml);
+
+/* 
+ Hey i am beforebegin
+Hey i am afetbegin
+This is a heading 2 by default
+This is a heading 2 by default
+This is a heading 2 by default
+This is a heading 2 by default
+Hey i am beforeend
+ 
+ */
+
+newHtml = "<h1> Hey i am afterend  </h1>";
+target.insertAdjacentHTML("afterend" , newHtml);
+/* 
+ Hey i am beforebegin
+Hey i am afetbegin
+This is a heading 2 by default
+This is a heading 2 by default
+This is a heading 2 by default
+This is a heading 2 by default
+Hey i am beforeend
+Hey i am afterend
+ 
+ */
+
+
+    </script>
+</body>
+</html>
