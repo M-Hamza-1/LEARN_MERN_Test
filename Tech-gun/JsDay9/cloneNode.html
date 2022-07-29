@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : cloneNode</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+    let elm = document.querySelector("ul");
+     let newElm1  = elm.cloneNode(false); // when pass only false then clone that element only 
+     console.log(newElm1);  //output : <ul></ul>
+    let newElm  = elm.cloneNode(true); // when passing ture all children of that node is also clonde
+    console.log(newElm);
+    /* 
+        output:
+                    <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+ */
+   let body = document.querySelector("body");
+   body.appendChild(newElm);
+   /* 
+      output : 
+                1
+                2
+                3
+                4
+                5
+                
+                1
+                2
+                3
+                4
+                5
+    
+    * /
+
+
+    </script>
+</body>
+
+</html>
