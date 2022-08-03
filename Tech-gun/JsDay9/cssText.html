@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom : innerCSS</title>
+</head>
+<body>
+    <button id ="btn" style="font-weight: 5px ; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Btutton</button>
+    <button id ="btn1" style="font-weight: 5px ; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Btutton</button>
+</body>
+<script>
+    // csstext =>
+    let btn = document.getElementById("btn");
+    // += becaause else it will remove inline css from html block
+     btn.style.cssText += "color : red ; background-color: aqua; border : 2px dashed  yellow ; width : 100%" 
+     
+
+     //using  setAttribute => 
+   let btn1 = document.getElementById("btn1");
+   
+     btn1.setAttribute("style" ,"color : black ; background-color: coral; border : 2px solid  blue ;" )
+     
+
+
+
+
+
+</script>
+</html>
