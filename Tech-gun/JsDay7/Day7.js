@@ -74,7 +74,7 @@
 // console.log(NewObj);  // output : { name: ' yash raj', age: 50 }
 
 // ################################################ size of object => Object.keys() #############################################
-
+// Object.keys retrun the key from object=>
 // console.log(Object.keys(NewObj).length); // output => 2
 
 // NewObj.type = " cinema";
@@ -149,7 +149,7 @@ eg: let obj ={name : "devesh"}
 //          this.AGE = Age;
 //          this.ROLLno = rollNo;
 //  }
-//  // how to use this => we make multipr student type object using this tapmlet
+//  // how to use this => we make multipe student type object using this tapmlet
  
 //  let student1 = new Student("shyam" , 12 , 16 , 1991110011002); // here student object is build with thsee perameter vaules 
 //  console.log(student1); // outout => Student { NAME: 'shyam', CLASS: 12, AGE: 16, ROLLno: 1991110011002 }

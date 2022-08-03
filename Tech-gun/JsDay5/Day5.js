@@ -18,7 +18,7 @@
 // arr.pop();
 // console.log(arr);  //[ 'naruto', 'loofi',  'itachi', 'madra'  'zoro',   'light',  8.8]
 
-// // 3 : unshift : addind an element first idx of array
+// // 3 : unshift : adding an element first idx of array
 
 // arr.unshift("sakhuna");
 // console.log(arr); //['sakhuna' , naruto', 'loofi',  'itachi', 'madra'  'zoro',   'light',  8.8]
@@ -117,16 +117,16 @@
 
 
 
-// // ********************************************  Arguments object************************************************************************\\
+// // ********************************************  Arguments object  ************************************************************************\\
 
 // // Arugument array => an array object store the value of arguments passed in function
 // // When more then 2 or three arugments passed in  function :
 
 // function sum2() {
-//   // store all value in arguments
+//                                  // store all value in arguments
 //   console.log(arguments); //[Arguments] { '0': 22, '1': 44, '2': 33 }      // because its an array object
 //   console.log(arguments.length); // 3
-//   // sum of those parameters
+//  // sum of those parameters
 //   let sumVar = 0;
 //   for (let i = 0; i < arguments.length; i++) {
 //     sumVar = sumVar + arguments[i];

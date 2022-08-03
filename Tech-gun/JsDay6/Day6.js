@@ -64,9 +64,10 @@ syntax of object is : let obj = {name : "devesh", age : 35, Number : 8171280446}
 // // how check property available or not : using in opretor || with undefined key name
 
 // // 1 : with undefined key => returns undefined
-// console.log(person.number); // output : undefined
-// //2 : with in operetor : retruns true or false
-// console.log("number" in person); // false
+//        console.log(person.number); // output : undefined
+
+// //2 :   with in operetor : returns true or false
+//        console.log("number" in person); // false
 
 // // how access values using loops in object : using in operetor
 

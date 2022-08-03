@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : getATTrubute ||Setattribute || removeAttribute</title>
+</head>
+<body>
+    <button id="button">Add</button>
+    <script>
+        let btn = document.getElementById("button");
+        btn.setAttribute("class" , "form1");  //     output =>  <button id="button" class="form1">Add</button>
+       
+
+        // getAttribute =>
+    let val = btn.getAttribute("class"); 
+    console.log(val);       // output => from1
+      
+    
+    // removeAttribute  => remove the attriubte given as input.
+     btn.removeAttribute("class");  // output => <button id="button">Add</button>
+   
+     // hasAttribute => checking either attribute available or not if yes retrun true else false
+      let ans = btn.hasAttribute("id");
+      console.log(ans); // ouput : true
+       
+      ans = btn.hasAttribute("class");
+      console.log(ans);
+      // ouput : false
+    </script>
+</body>
+</html>

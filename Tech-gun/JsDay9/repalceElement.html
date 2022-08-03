@@ -18,10 +18,10 @@
       // replaceChild => replace the new itam on the list with existing element
       let elm = document.querySelector("ul");
       let replace = elm.lastElementChild;
-      let newItam = document.createElement("li");
+      let newItam;
 
-      newItam.innerHTML = "<a href='#'>Classes</a>";
-     elm.replaceChild(newItam, replace);
+      newItam.innerHTML = "<li><a href='#'>Classes</a></li>";
+      elm.replaceChild(newItam, replace);
      /* 
         output : 
 
