@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css - Classes</title>
+    <style>
+      .parameter {
+        width: 30vh;
+        height: 20vh;
+        border: 8px dotted aqua;
+        margin: 30vh;
+      }
+      .property {
+        color: black;
+
+        background-color: coral;
+      }
+      .newClass {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-style: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn" class="parameter property">box</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+      // get class values usin className =>
+      let value = btn.className;
+      console.log(value); // output : parameter property
+
+      // add newClass as value inside button using className : => concatintaion must requird else other properties will remove automatically 
+      btn.className  += " newClass"  // output : <button id="btn" class="parameter property newClass">box</button>
+
+
+    </script>
+  </body>
+</html>
