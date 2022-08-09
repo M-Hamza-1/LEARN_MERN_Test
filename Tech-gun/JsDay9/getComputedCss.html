@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getComputedStyle()</title>
+</head>
+<style>
+    #btn{
+        background-color: red;
+        color: aqua;
+    }
+</style>
+<body>
+  <button id="btn">Hello</button>  
+<script>
+ let btn = document.getElementById("btn");
+ // getComputedStyle provided all css available in the given object
+  let value =  getComputedStyle(btn);
+  // value has all css available in button included by browser as well.
+   console.log(value.color); // output : rgb(0, 255, 255)   [with dot notaion checking one css property ]
+</script>
+</body>
+
+</html>

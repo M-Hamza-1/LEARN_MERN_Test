@@ -65,7 +65,7 @@
 // arr = str.split(' '); // in paranthisis we pass where to saparet the words as an element here we passed from space;
 // console.log(arr); // ['this', 'is',  'a','string', 'to','array', 'converstion', 'with','split','function']
 
-// // 9 . join() => vice versa of split irs coberts array and string
+// // 9 . join() => vice versa of split it converts array and string
 // arr =['this', 'is' , 'array', 'converstaion', 'to','the string','with','join','function']
 // str = arr.join('-'); // whatever we pass in to the paranthisis as an argument that saparets the element
 // console.log(str);  // this-is-array-converstaion-to-the string-with-join-function
@@ -119,7 +119,7 @@
 
 // // ********************************************  Arguments object  ************************************************************************\\
 
-// // Arugument array => an array object store the value of arguments passed in function
+// // Argument array => an array object store the value of arguments passed in function
 // // When more then 2 or three arugments passed in  function :
 
 // function sum2() {

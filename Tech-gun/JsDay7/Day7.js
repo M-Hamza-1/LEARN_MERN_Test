@@ -88,7 +88,7 @@
 
 /*
  object has two type of properties =>
-1 . Data properties . 
+1 . Data properties. 
 eg: let obj ={name : "devesh"}
 
 2 . Accessor Properties.
@@ -97,10 +97,10 @@ eg: let obj ={name : "devesh"}
 */
 
 
-// getter => using getter object methods can be accessable like other properties also maluplation can be done
+// getter => using getter object methods can be accessable like other properties also manuplation can be done
 
 // const obj = {
-//                name : "Swati",
+//                 name : "Swati",
 //                 age : 33,
 //                 genedr : "female",
 //                 get getMethod(){
@@ -194,15 +194,15 @@ eg: let obj ={name : "devesh"}
 
 // const user = {
 //                id : "iam_NightBot",
-//             email : "xyz@gmail.com",
+//              email : "xyz@gmail.com",
 //             info : {            // this is nested object
 //                      name : "Rahul roy",
 //                      age : 26,
-//                      gender : "male",
-//                      address : { // this is also nested object here
-//                         city : "kasol",
+//                      gender   : "male",
+//                      address  : { // this is also nested object here
+//                         city  : "kasol",
 //                         state : "Himanchal Pardesh",
-//                         pin : 363401,
+//                         pin   : 363401,
 //                         fun(){
 //                             console.log(`this function  belongs to ${user.id} user`);
 //                         }
@@ -309,6 +309,6 @@ x=7;
 // Some time its problmatic for code so we user ( "use strict " ) inside double qoutes and single
 
 // Now it gives error
-"use strict";
-x =6;
-console.log(x); // output => ReferenceError: x is not defined  
+// "use strict";
+// x =6;
+// console.log(x); // output => ReferenceError: x is not defined  

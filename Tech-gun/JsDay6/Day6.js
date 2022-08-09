@@ -1,4 +1,4 @@
-// ################################################Anonymous function ###################################################################
+// ################################################ Anonymous function ###################################################################
 /* Function without name is called anonymous function.. 
 Anonymous function has local scope because they don'nt have any name.. 
 And in ram  function is called by using name and that contain space in memory, But Anonymous function has no name.
@@ -57,7 +57,7 @@ syntax of object is : let obj = {name : "devesh", age : 35, Number : 8171280446}
 // // undefind value in object :
 // console.log(person.lastName); // output : undefined
 
-// // How to delete peoperty from object : using delete
+// // How to delete property from object : using delete
 // delete person.number;
 // console.log(person); // output : { name: 'Raghav', age: 22, home: 'Bhopal' }
 
@@ -66,7 +66,7 @@ syntax of object is : let obj = {name : "devesh", age : 35, Number : 8171280446}
 // // 1 : with undefined key => returns undefined
 //        console.log(person.number); // output : undefined
 
-// //2 :   with in operetor : returns true or false
+// //2 :   with (in) operetor : returns true or false
 //        console.log("number" in person); // false
 
 // // how access values using loops in object : using in operetor
@@ -114,7 +114,7 @@ syntax of object is : let obj = {name : "devesh", age : 35, Number : 8171280446}
 // }
 // obj.function(); // output :  hello javaScript
 
-// // 3. ES6 version at the of decleartion =>
+// // 3. ES6 version at the time of decleartion =>
 // obj = {
 //           name : "ES6",
 //           age  : 2015,
