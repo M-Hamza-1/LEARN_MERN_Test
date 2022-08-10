@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom : classList</title>
+   <style>
+    .color {
+             background-color: brown;
+             color: aqua;
+            
+          
+    }
+   .length {
+        width: 30vh;
+        height: 20vh;
+        margin: 20vh 20vh;
+        padding: 30px;
+        border: 5px dotted greenyellow;
+       
+    }
+   .properties {
+          text-transform: uppercase;
+           font-weight: bolder;
+           
+    }
+    .properties1 {
+          text-transform: uppercase;
+           font-weight: bolder;
+           
+    }
+   </style>
+</head>
+<body>
+    <button id="box" class="color length properties  ">Box</button>
+<script>
+    // class list => return class list as array formate
+    let btn = document.getElementById("box");
+    // classList is properties
+    let classList = box.classList;
+      
+      for(let css of classList)
+        console.log(css);
+        /* 
+        color
+        length
+        properties
+        
+        */
+
+
+  // Methods with classList =>      
+//1 remove() using add method =>
+  classList.remove("properties");
+  console.log(classList); // output : ['color', 'length']
+
+  //2 add() method =>
+
+  classList.add("properties");
+  console.log(classList);    // output : ['color', 'length', 'properties']
+
+  // replace() => replace the class given
+  classList.replace("properties" , "properties1");
+    console.log(classList);    // output : ['color', 'length', 'properties1']
+   
+//3 contain() => check if class available return true else false.
+
+    console.log(classList.contains("properties")); // output : false
+    
+    console.log(classList.contains("properties1")); // output : true
+
+    //4 toggle() => if given class available then reomve that class if not then add
+    classList.toggle("properties1"); 
+  console.log(classList);  // output : ['color', 'length']
+
+  classList.toggle("properties"); 
+  console.log(classList);  // output :  ['color', 'length', 'properties']
+
+
+</script>
+</body>
+
+</html>
