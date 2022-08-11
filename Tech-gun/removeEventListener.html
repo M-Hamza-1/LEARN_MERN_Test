@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove-EventListner</title>
+     <style>
+    .btn {
+      border: 2px solid black;
+      border-radius: 3px;
+      color: black;
+      background-color: aqua;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: auto;
+      height: auto;
+    }
+    </style>
+</head>
+<body>
+    <button id="btn" class ="btn">Click-me</button>
+     
+</body>
+<script>
+//    removeEventListener => work on where addEventListener used and function with name passed as parameter
+ let btn = document.querySelector(".btn");
+btn.addEventListener("click" ,myfunction1 )
+btn.addEventListener("click" ,myfunction2 )
+
+btn.removeEventListener('click' , myfunction2)
+function myfunction1(){
+    alert("button is clicked1");
+}
+function myfunction2(){
+    alert("button is clicked2");
+}
+
+ 
+  
+</script>
+</html>
