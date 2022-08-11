@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .btn {
+      border: 2px solid black;
+      border-radius: 3px;
+      color: black;
+      background-color: aqua;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: auto;
+      height: auto;
+    }
+  </style>
+  <body>
+    <div>
+        <!-- with inline event function -->
+      <!-- <button onclick="clickme()" class="btn">Click-me</button> -->
+
+       <!-- using evenListener -->
+      <button class="btn">Click-me</button>
+    </div>
+    <script>
+        // with function registraion and inline events
+       function clickme() {
+        let btn = document.querySelector("div").innerHTML;
+        let elm = document.createElement("div");
+        document.querySelector("body").appendChild(elm);
+        elm.innerHTML = btn;
+      }
+
+//   with EventListener and anonymous function =>
+let btn = document.querySelector(".btn");
+btn.addEventListener("click" , function(){
+    alert("button is clicked");
+})
+
+
+
+    </script>
+  </body>
+</html>
