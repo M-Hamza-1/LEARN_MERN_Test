@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eevent :Page-laoder</title>
+</head>
+<body>
+    <img src="https://photos.app.goo.gl/xqzLxrNseEj3SoXX6" alt="img">
+</body>
+<script>
+    //DOMContentLoaded => it will worked before content load in window.
+    window.addEventListener("DOMContentLoaded" , myFun());
+
+  function  myFun(){
+        console.log("DOMContentLoaded => added");
+    }
+
+    // "load" => during content load and after used.
+    let img = document.querySelector("img");
+    img.addEventListener("load" , myFun2());
+    
+function  myFun2(){
+        console.log("load => added");
+    }
+
+</script>
+</html>
