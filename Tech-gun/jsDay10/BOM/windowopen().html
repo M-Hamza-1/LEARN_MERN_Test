@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom : open()</title>
+</head>
+<body>
+    <button class="btn1">google</button>
+    <button class="btn2">yahoo</a></button>
+    <button class="btn3">close</button>
+    <script>
+        let btn1  = document.querySelector(".btn1");
+        let btn2  = document.querySelector(".btn2");
+        let btn3  = document.querySelector(".btn3");
+       
+        let url = "https://google.com"
+        let fetures =  "height = 600,width =500"
+         let id;
+        btn1.addEventListener("click" , function(){
+             id =   window.open(url ,'google',fetures); // id contain the address vaule 
+        });
+
+        // change the address of google to yahoo : if google tab not open then new yahoo complete tab opend with default feature
+        btn2.addEventListener("click" , function(){
+             window.open("https://yahoo.com" ,'google'); // remove prv address from google and add new
+             
+        });
+
+        // close the tab => using id 
+         btn3.addEventListener("click" , function(){
+            id.close(); // close will close the tab open with "google"
+             
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser object Model</title>
+  </head>
+  <!-- The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. -->
+  <body>
+    <!-- The window object is supported by all browsers. It represents the browser's window. -->
+    <!-- All global JavaScript objects, functions, and variables automatically become members of the window object. -->
+    <!-- Even the document object (of the HTML DOM) is a property of the window object: -->
+
+    <script>
+        // Golbal variable => automaticlly become property of window object
+      var x = "hello world !";    // var x golbal variable and also become property of window 
+      console.log(x);            // output : "hello world !"
+
+      console.log(window.x);   // output : " hello world !"
+ 
+    
+   //2 : global function => autmaticlly becomes method of window object.
+    
+   function golbal(){
+    window.document.write("<h1>Hello World !</h1>"); 
+   }
+   golbal();
+   window.golbal(); // also access like this way both are same .
+
+
+   
+
+    </script>
+  </body>
+</html>
