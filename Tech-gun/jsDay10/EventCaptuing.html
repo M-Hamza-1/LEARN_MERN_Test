@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event : Bubblin and capturing</title>
+    <style>
+        .btn{
+            padding: 5px;
+            border: 2px solid red;
+            background: aqua;
+        }
+        div{
+             padding: 70px;
+             background-color: darkblue;
+             border: 5px solid salmon;
+        }
+        body{
+           padding:  100px;
+           background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="btn">Click-me</button>
+    </div>
+    <script>
+        /*
+        Event capturing  => 
+         Event capturing is the event starts from top element to the target element.
+         It is the opposite of Event bubbling, which starts from target element to the top element.
+         
+         require to pass : true (its necessary)
+         */
+        
+        let btn_child = document.querySelector(".btn");
+        let div_parent  = document.querySelector("div");
+        let body_parent  = document.querySelector("body");
+
+        // btn_child.addEventListener("click" , myFun1 , true); // target is button
+        // div_parent.addEventListener("click" , myFun2 , true);  
+       
+        // body_parent.addEventListener("click" , myFun3 , true); 
+
+         function myFun1(){
+            alert("button is clicked");
+            console.log("button is clicked");
+         }
+         function myFun2(){
+             alert("div is clicked");
+            console.log("div is clicked");
+         }
+         function myFun3(){
+             alert("body is clicked")
+            console.log("body is clicked");
+         }
+         /*
+         {
+            When target is button =>
+            output :       body is clicked
+                           div is clicked
+                           button is clicked
+         }
+
+         {  
+            When target is div =>
+            output :        body is clicked
+                            div is clicked
+                            
+         }
+         
+         */
+
+
+
+         // Edge case => What if i need that order like => body => button => div
+         // (pass the "false" as an argument in div)
+         btn_child.addEventListener("click" , myFun1 , true); // target is button
+        div_parent.addEventListener("click" , myFun2 , false);   // do false to body then it will select in end
+       
+        body_parent.addEventListener("click" , myFun3 , true); 
+
+        /*
+         
+            When target is button =>
+            output :       body is clicked
+                           button is clicked
+                           div is clicked  
+
+         
+         */
+
+
+
+    </script>
+</body>
+</html>
