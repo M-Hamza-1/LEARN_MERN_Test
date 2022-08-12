@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keybord : keydown / keyup</title>
+</head>
+<body>
+  <h1>keydown || keyup</h1>
+</body>
+<script>
+  // keydown event =>
+    window.addEventListener("keydown" , function(e){
+         let elm = document.createElement("h1");
+       elm.innerText =`${ e.key} is down`;
+         document.body.appendChild(elm);
+    })
+
+    // keyup =>
+    window.addEventListener("keyup" , function(e){
+         let elm = document.createElement("p");
+         elm.innerText =`${ e.key} is up`;
+         elm.style.cssText  ="color : red ;font-size:25px;"
+         document.body.appendChild(elm);
+    })
+
+</script>
+</html>
