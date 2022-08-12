@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event : focus /blur/change/input</title>
+    
+</head>
+<body>
+    <textarea name="text" id="input" cols="30" rows="10"></textarea>
+    <script>
+        // focus => high-light the text area 
+        let elm = document.getElementById("input");
+        elm.addEventListener("focus" , function(e){
+              elm.style.background = "aqua"; 
+        });
+
+
+       
+        // blur => The blur() method removes focus from an element.
+        elm.addEventListener("blur" , function(){
+                elm.style.background = "white"; 
+        });
+
+        //change  => used for tracking the change on the text area
+            elm.addEventListener("change" , function(){
+                // console.log(this.value);
+        });
+
+
+        
+          //input  => used for tracking the change on the text area in realtime
+         elm.addEventListener("input" , function(){
+                console.log(this.value);
+        });
+
+    </script>
+</body>
+</html>
