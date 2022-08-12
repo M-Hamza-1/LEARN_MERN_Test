@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event : Bubblin and capturing</title>
+    <title>Event :stopPropagation() </title>
     <style>
         .btn{
             padding: 5px;
@@ -17,59 +18,64 @@
              padding: 70px;
              background-color: darkblue;
              border: 5px solid salmon;
-             display: flex;
-             margin-top: 15vh;
         }
         body{
            padding:  100px;
            background-color: cadetblue;
         }
     </style>
+   
 </head>
 <body>
     <div>
         <button class="btn">Click-me</button>
     </div>
     <script>
-        // EventBubbling => child element (target element) exicute first then other  parents 
-        // requird to pass => false ( its by default availble )
-        
+    
+        // The stopPropagation() => only target(child) element is exicute using this
+       // method prevents propagation of the same event from being called. 
+        //Propagation means bubbling up to parent elements or capturing down to child elements.
+       
         let btn_child = document.querySelector(".btn");
         let div_parent  = document.querySelector("div");
         let body_parent  = document.querySelector("body");
 
-        btn_child.addEventListener("click" , myFun1 , false); // target is button
-        // div_parent.addEventListener("click" , myFun2 , false);  
-        div_parent.addEventListener("click" , myFun2);     // false not required its by default active
-        body_parent.addEventListener("click" , myFun3 , false); 
+        btn_child.addEventListener("click" , myFun1 ); // target is button
+        div_parent.addEventListener("click" , myFun2);  
+        body_parent.addEventListener("click" , myFun3); 
 
-         function myFun1(){
+         function myFun1(event){
             alert("button is clicked");
             console.log("button is clicked");
+            event.stopPropagation();
          }
-         function myFun2(){
+         function myFun2(event){
              alert("div is clicked");
             console.log("div is clicked");
+             event.stopPropagation();
          }
-         function myFun3(){
+         function myFun3(event){
              alert("body is clicked")
             console.log("body is clicked");
+             event.stopPropagation();
          }
          /*
          {
             When target is button =>
-            output :        button is clicked
-                            div is clicked
-                            body is clicked
+            output :  body is clicked
+                           
          }
 
          {  
             When target is div =>
-            output :        div is clicked
-                            body is clicked
+            output :  div is clicked
+                            
          }
          
          */
+
+
+
 
 
     </script>
