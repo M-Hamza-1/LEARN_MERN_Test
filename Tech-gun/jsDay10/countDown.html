@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bom : setTimeout and clearTimeout</title>
+  </head>
+  <body>
+   <!-- setTimeout -->   
+   <h1>Count Down</h1>
+  </body>
+  <script>
+
+let id  = setInterval(myFun1 , 1000)  
+let count =0;
+function myFun1() {
+  
+ document.querySelector('h1').innerText =   count++;
+}
+
+setTimeout(myFun , 12000);
+function myFun() {
+
+clearInterval(id);
+document.querySelector('h1').innerText = "< hello world ! >"
+
+}
+  </script>
+</html>

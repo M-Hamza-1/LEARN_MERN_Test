@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom : loaction object</title>
+</head>
+<body>
+    <!-- access it with window.location || just loction both are same -->
+
+<h1>location object</h1>
+</body>
+<script>
+    // href => used to get or set location of document. get =>
+    console.log(location.href); // output : http://127.0.0.1:5500/jsDay10/loctaionObjecr.html
+  // pathname => return the path of file
+  console.log(location.pathname); // output : /jsDay10/loctaionObject.html 
+  console.log(location.protocol); // output : http:
+ // set with href =>
+  location.href ="https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
+  console.log(location.href); // now location of this document is lofi girl youtube page
+
+  // assign() => sets the href of document. href property work on this.
+  location.assign("https://www.w3schools.com/jsref/obj_location.asp"); // now document will open this refrence.
+ location.reload(); // reload the same page.
+ location.replace(" https://www.youtube.com/watch?v=Fmqhsd8R29s&t=8662s&ab_channel=TechGun"); // add new location of document with any history.
+
+</script>
+</html>
