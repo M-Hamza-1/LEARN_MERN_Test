@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word-counter</title>
+    <style>
+      body {
+        padding: 20px 50px;
+        background-color: black;
+      }
+      h1 {
+        margin: 0;
+        padding: 20px 50px;
+        background-color: aqua;
+        border: 2px solid aqua;
+        text-align: center;
+      }
+      #text {
+        width: 99.3%;
+        height: 40vh;
+        border: 2px solid aqua;
+        margin: 0;
+        font-size: large;
+      }
+      p {
+        padding: 10px;
+        margin: 0;
+        background-color: aqua;
+        text-align: center;
+        border: 2px solid aqua;
+        font-size: 25px;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Word And Character Counter</h1>
+    <textarea id="text" cols="30" rows="10"></textarea><br />
+    <p>
+      <span id="word"> 0 </span> Words and <span id="Char"> 0 </span> Character
+    </p>
+    <script>
+      let elm = document.getElementById("text");
+      elm.addEventListener("input", function () {
+        let val = this.value; // this is nothing but pointing textarea object
+        let count = val.length;
+        document.getElementById("Char").innerText = count;
+
+        // using split() method of array. string to array convert
+        let arr = val.split(" ");
+
+        let newArray = arr.filter(function (val) {
+          // using filter() method.
+          return val != "";
+        });
+
+        document.getElementById("word").innerText = newArray.length;
+      });
+    </script>
+  </body>
+</html>
