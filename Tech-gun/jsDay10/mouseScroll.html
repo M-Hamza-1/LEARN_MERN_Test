@@ -15,9 +15,10 @@ window.addEventListener("scroll" , function(){
     console.log("scrolling"); 
 });
 
-// wheel => check either scrolling to top or down for delta y , delta x left and right scrolling
-  window.addEventListener("wheel" , function(e){
-   if(e.deltaX > 0){
+// wheel => check either scrolling top to down or vice versa for delta y , delta x  checks left and right scrolling
+  
+ window.addEventListener("wheel" , function(e){
+   if(e.deltaY > 0){
     console.log("scrolling down");
    }
    else if(e.deltaY < 0) {
@@ -25,8 +26,10 @@ window.addEventListener("scroll" , function(){
    } 
    
 });
+
 // ofset => checks how much scrolling done till
- window.addEventListener("scroll" , function(e){
+   
+window.addEventListener("scroll" , function(e){
     if(window.pageYOffset> 200){
         let body = document.querySelector("body");
         body.style.background = "red"
