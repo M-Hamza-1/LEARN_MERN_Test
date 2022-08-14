@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word_Counter</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px 20px;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bolder;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0% auto;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+      .btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 20px;
+        border: 2px solid lightblue;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      #white {
+        background-color: white;
+      }
+      #aqua {
+        background-color: aqua;
+      }
+      #coral {
+        background-color: coral;
+      }
+      #black {
+        background-color: black;
+      }
+      #color-container {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="color-container">
+      <span class="btn" id="white" onclick="changeBg('white')"></span>
+      <span class="btn" id="aqua" onclick="changeBg('aqua')"></span>
+
+      <span class="btn" id="coral" onclick="changeBg('coral')"></span>
+      <span class="btn" id="black" onclick="changeBg('black')"></span>
+    </div>
+    <h1 class="switch">About us</h1>
+    <img src="./Demo.jpg" alt="img" />
+
+    <p class="switch">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis
+      consequatur natus accusantium mollitia magnam nobis perferendis odit
+      labore ea excepturi laudantium, sed distinctio unde atque modi dolor
+      voluptatem dolorem suscipit aperiam consectetur totam ducimus rerum
+      itaque. Cum est praesentium optio porro. Distinctio perferendis autem
+      aliquid repellat, excepturi labore, porro ullam consequuntur ipsum optio,
+      omnis obcaecati sequi facere error id architecto corrupti neque voluptas
+      in dolorum officiis deleniti debitis ducimus. Nemo nobis ut corrupti
+      magni. Animi in, illum provident exercitationem non atque labore hic earum
+      quis cumque consequuntur placeat culpa odit cupiditate. Quaerat doloremque
+      ullam tempora sed laboriosam laborum, at suscipit exercitationem eveniet
+      maxime reprehenderit quis delectus provident, ipsam similique beatae,
+      labore quidem eos nisi quae. Maxime delectus pariatur vel id a iste odio
+      inventore quibusdam ea tempora, earum molestiae corrupti in officiis saepe
+      reiciendis similique exercitationem fugit asperiores? Voluptatem veniam
+      necessitatibus aspernatur atque a ad quas eos nisi? Dignissimos quas
+      molestiae quaerat harum esse nobis perferendis illum consectetur
+      accusantium sapiente ad natus optio dolorem laborum assumenda fugit
+      incidunt, recusandae consequatur similique! Veniam, facere odio ea eius
+      fugit delectus qui nostrum minus commodi! Adipisci blanditiis amet sunt
+      vero eius, rem corporis eaque totam placeat nobis doloribus dolores at
+      praesentium aut! Repudiandae nobis unde aliquid tenetur dolorem assumenda
+      pariatur vel distinctio facilis quidem fuga consequuntur eos nisi officia
+      suscipit est labore enim exercitationem, corporis ex voluptatem. Quibusdam
+      facilis molestiae quis voluptates quas voluptatem ullam minima vero
+      repellat, provident porro officia est hic quidem animi laudantium cumque
+      voluptatum? Quae alias repudiandae ipsum rerum distinctio commodi
+      dignissimos aliquid nulla tenetur molestiae animi eum dolores suscipit
+      veniam fuga nostrum similique soluta, id voluptatibus necessitatibus
+      itaque harum quos ut. Rerum cumque optio, blanditiis ratione error fuga,
+      atque sequi odio, nulla quae expedita cum odit veritatis obcaecati non in.
+      Facilis officia magnam beatae pariatur consequuntur. Enim consequuntur
+      quam tempore a architecto maiores obcaecati maxime, eaque pariatur porro
+      sint cupiditate! Dolores assumenda voluptas necessitatibus suscipit
+      reiciendis adipisci soluta, enim iste. Quo dolor quis, laudantium iure
+      omnis nesciunt eaque laborum excepturi enim nobis, corporis reiciendis
+      blanditiis, provident doloribus maxime tempore dolorem debitis. Nisi,
+      excepturi! Culpa consectetur cupiditate asperiores vel placeat
+      exercitationem consequuntur vero eum assumenda quae praesentium et laborum
+      iure architecto, tempore deleniti fuga quis quia! Fuga voluptas
+      exercitationem suscipit sequi porro quaerat quam nisi veniam tenetur autem
+      reprehenderit, accusantium ad dolor molestiae voluptates non aliquid
+      veritatis vero aliquam! Voluptates laboriosam aliquam omnis nisi cumque
+      eius eaque cupiditate accusantium, animi id debitis sequi rerum nemo modi
+      ipsa mollitia, quisquam expedita amet architecto culpa non! Id asperiores,
+      dicta odio, nisi minima reiciendis veritatis quia dignissimos consectetur
+      repellat error, officiis inventore quis qui? Fuga adipisci debitis
+      excepturi iusto sequi ratione dicta necessitatibus odio aspernatur,
+      doloribus eius? Rem voluptates enim suscipit magnam ad excepturi ullam,
+      officiis, recusandae, inventore deserunt doloremque ex et molestias
+      dolores maiores eligendi veritatis perspiciatis quidem culpa quam sapiente
+      amet? Perspiciatis ratione nulla deserunt architecto fugit quod ipsam
+      repudiandae pariatur dolorum repellendus sed reiciendis consectetur
+      maiores delectus perferendis unde aspernatur assumenda cumque, at maxime
+      quidem ad! Quam, vero!
+    </p>
+    <script>
+      let h1 = document.querySelector("h1");
+      let p = document.querySelector("p");
+      let clr = document.getElementsByClassName("switch"); // what if all of itam is there for changing color so use it like that
+      function changeBg(color) {
+        document.body.style.backgroundColor = color;
+        if (color == "black") {
+          // document.body.style.color = "white"
+          p.style.color = "Violet ";
+          h1.style.color = "orange";
+        } else {
+          for (let elm of clr) {
+            elm.style.color = "black"; // this else : for example when lot of object to target for same color/property so this is the best way to do
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
