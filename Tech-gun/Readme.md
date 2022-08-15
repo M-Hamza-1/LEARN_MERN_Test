@@ -18,4 +18,4 @@
 * Sticky NavBar
 * Form Validator
 * Image slider
- * Stop Watch
+* Stop Watch
