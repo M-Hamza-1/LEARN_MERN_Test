@@ -8,9 +8,11 @@
   </head>
   <body>
     <script>
-      //let and const intoduced in ES6
+        //let and const intoduced in ES6
 
-      // var has scope issue and its also becomes part of window object property when declare as  gobal scope.
+        // var has scope issue and its also becomes part of window object property when declare as  gobal scope.
+
+
 
       var x = 46; // glabal variable
       console.log(x); //output : 46
@@ -23,6 +25,10 @@
       let value = 33;
       console.log(window.value); // output : undefined
       console.log(value); // output :33
+
+
+
+
 
 
       // let and const have block level scope unlike var has function level scope=>
@@ -38,6 +44,9 @@
       }
       fun();
 
+    
+
+    
       // let and const scope =>
 
       function fun2(){
@@ -50,7 +59,10 @@
       }
       fun2();
 
+
       
+
+
    // const =>
    function fun3(){
           const str = "this is about let";
