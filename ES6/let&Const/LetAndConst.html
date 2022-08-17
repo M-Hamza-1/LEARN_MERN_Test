@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //let and const intoduced in ES6
+
+      // var has scope issue and its also becomes part of window object property when declare as  gobal scope.
+
+      var x = 46; // glabal variable
+      console.log(x); //output : 46
+
+      // also accessable using window object =>
+      console.log(window.x); //output : 46
+
+      // let when decalre as gloabl value it gives the undefined with window object =>
+
+      let value = 33;
+      console.log(window.value); // output : undefined
+      console.log(value); // output :33
+
+
+      // let and const have block level scope unlike var has function level scope=>
+       
+      function fun(){
+        var x=3;
+        console.log(x); // output : 3
+        if(true){
+            var newBlock = "hello if block"
+        }
+        // accessing  newBlock var outSide of block in the function.
+        console.log(newBlock); // output : hello if block
+      }
+      fun();
+
+      // let and const scope =>
+
+      function fun2(){
+          let str = "this is about let";
+          if(true){
+            let newBlockLet = "HELLO NEW bLOCK FROM Let";
+          }
+         // accessing  newBlock let outSide of block in the function.
+          console.log(newBlockLet); //output : Uncaught ReferenceError: newBlockLet is not defined
+      }
+      fun2();
+
+      
+   // const =>
+   function fun3(){
+          const str = "this is about let";
+          if(true){
+            const newBlockConst = "HELLO NEW bLOCK FROM Let";
+          }
+         // accessing  newBlock const outSide of block in the function.
+          console.log(newBlockConst); //output : Uncaught ReferenceError: newBlockConst is not defined
+      }
+      fun3();
+
+    </script>
+  </body>
+</html>
