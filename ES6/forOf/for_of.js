@@ -49,21 +49,21 @@ console.log(value); // as an array type access value with array notaion use
 // for string =>
 let str = "hello world";
 for (let Char of str) {
-  console.log(str); 
+  console.log(Char); 
 }
 /* 
-output : 11 time hello world print bcause lenght of str 11.
-hello world
-hello world
-hello world
-hello world
-hello world
-hello world
-hello world
-hello world
-hello world
-hello world
-hello world
+output :
+h
+e
+l
+l
+o
+ 
+w
+o
+r
+l
+d
    
 */
 
@@ -76,3 +76,4 @@ for(let elm of arr){
     total += elm;
 }
 console.log(total); // output : 15
+
