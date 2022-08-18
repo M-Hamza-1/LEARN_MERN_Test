@@ -15,15 +15,7 @@ arr1 = ["hello", 1, , 3, ...arr2 , " array1"]; //output : ['hello' , 1, ,3,  2, 
 
 console.log(arr1);
 
-//Assign the first and second items from numbers to variables and put the rest in an array:
 
-let numbers =[1 ,2 ,3 , 4];
-
-let [one , two , ...remains] =numbers;
-
-console.log(one); // output : 1
-console.log(two); // output :2
-console.log(remains); // output : [ 3, 4 ]
 
 
 // same as with object and string.

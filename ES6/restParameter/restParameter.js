@@ -17,3 +17,14 @@ function sum(...sum){
 }
 // 10 arguments at one time
 sum(1,2,3,4,5,6,7,8,9,10);  // output : 55
+
+
+//Assign the first and second items from numbers to variables and put the rest in an array:
+
+let numbers =[1 ,2 ,3 , 4];
+
+let [one , two , ...remains] =numbers;  // with array destructuring 
+
+console.log(one); // output : 1
+console.log(two); // output :2
+console.log(remains); // output : [ 3, 4 ]

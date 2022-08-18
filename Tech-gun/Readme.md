@@ -12,7 +12,7 @@
    * Bom
 
 ## Projects 
-* Temprature convertor
+* Temprature convertorj
 * Word Counter
 * Background Changer
 * Sticky NavBar
