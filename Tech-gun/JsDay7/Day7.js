@@ -6,30 +6,35 @@
 
 // // .getTime() => date returns in milisecond :
 // console.log(MyDate.getTime()); // output => 1658892028880
+
 // // Date.now() => time in milisec
 // console.log(Date.now());
+
 // //.getDay() => days retruns Monday to sunday
 
 // console.log(MyDate.getDay()); //  output => 3
 
 // // .getHours() => retruns the only hour digit
 // console.log(MyDate.getHours()); // output => 9
+
 // // .getMinutes() =>
 // console.log(MyDate.getMinutes()); // output => 0
+
 // // .getSecond() =>
 // console.log(MyDate.getSeconds()); // output => 45
-// // .getMonth() => retruns month value start with 0 and end in 11.
+
+// // .getMonth() => returns month value start with 0 and end in 11.
 // console.log(MyDate.getMonth()); // output => 6 // its july right now but in js number start 0-11 (jan -0) and (Dec-11)
-// // .getFullYear() => retruns the  year 
+
+// // .getFullYear() => retruns the  year
 // console.log(MyDate.getFullYear()); // output => 2022
 // // there are many more methods
-
 
 // // We use Date object with customized date as well passing as and argument.
 // // there are seven parameter we use =>  (Year,MonthIdx,Date, Hours, Minutes, seconds,miliseconds)
 
 // const OldDate = new Date(2019 ,11 ,10 , 17 ,10 ,20 , 30); // passparameters year to mili second as per the requirment.
- 
+
 // console.log(OldDate.getFullYear()); // OUTPUT => 2019
 
 // console.log(OldDate.getMonth()); // output => 11 // as same as above
@@ -43,10 +48,8 @@
 // console.log(StrDate.getMonth()); // output =>11
 // console.log(StrDate.getDate()); // output =>10 // all methord work as same as above
 
-
 ///////////////////////////////////////////////   Date Using Set \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 // Set Date methods let you set date values (years, months, days, hours, minutes, seconds, milliseconds) for a Date Object.
-
 
 // const myDate = new Date();
 // myDate.setFullYear(2019);
@@ -55,19 +58,17 @@
 // myDate.setDate(3);
 // console.log(myDate); //output => 2019-07-03 T 06:44:32.028Z
 
-// // more as same as like above methods 
-
+// // more as same as like above methods
 
 //****************************************************************************************************************************************\
-
 
 // ################################################## Object using new operator #############################################################
 
 // // how to create =>  new Object();
-// let NewObj = new Object; 
+//    let NewObj = new Object;
 // // how to define => with dotnotaion
 
-// NewObj.name =" yash raj"; 
+// NewObj.name =" yash raj";
 
 // console.log(NewObj);  // output : { name: ' yash raj' }
 // NewObj.age  = 50;
@@ -81,10 +82,7 @@
 
 // console.log(Object.keys(NewObj).length); // output => 3
 
-
 // ############################################ getter and setter ####################################################
-
-
 
 /*
  object has two type of properties =>
@@ -95,7 +93,6 @@ eg: let obj ={name : "devesh"}
   get => geting value of object
   set => seting value of object 
 */
-
 
 // getter => using getter object methods can be accessable like other properties also manuplation can be done
 
@@ -113,7 +110,6 @@ eg: let obj ={name : "devesh"}
 
 // console.log(obj.getMethod); // output => SWATI  ( accessing like other propeties and manuplation)
 
-
 // setter => used for change a vaule of object
 
 // const SetObj = {
@@ -124,34 +120,27 @@ eg: let obj ={name : "devesh"}
 //                           return this.name = x.toUpperCase();
 //                  }
 
-
 // }
 
 // SetObj.setMethod ="vijay raaj"
 // // setting and manupalting the value using setter in object method
 // console.log(SetObj);  // output => { name: 'VIJAY RAAJ', age: 36, gender: 'male', setMethod: [Setter] }
 
-
-
-
-
-
-
 // ################################################# object consrtcutor #############################################################################\\
 
-// /* 
+// /*
 //  contrcutor used as an templet for similar type of multiple object.. when we need same type of property in multiple object
 //  */
 // // How declare a contrcutor => there is a constructor of student type.
-//  function Student(Name , Class , Age , rollNo){ 
+//  function Student(Name , Class , Age , rollNo){
 //          this.NAME = Name;
 //          this.CLASS = Class;
 //          this.AGE = Age;
 //          this.ROLLno = rollNo;
 //  }
 //  // how to use this => we make multipe student type object using this tapmlet
- 
-//  let student1 = new Student("shyam" , 12 , 16 , 1991110011002); // here student object is build with thsee perameter vaules 
+
+//  let student1 = new Student("shyam" , 12 , 16 , 1991110011002); // here student object is build with thsee perameter vaules
 //  console.log(student1); // outout => Student { NAME: 'shyam', CLASS: 12, AGE: 16, ROLLno: 1991110011002 }
 
 //  let student2 = new Student("Kanchan" , 10 , 14 , 38); // another same object
@@ -165,32 +154,29 @@ eg: let obj ={name : "devesh"}
 
 //  // how add new value in contstructor => // ReferenceError:
 
-//  Student.GENDER = "gender";  // ReferenceError: gender is not defined 
+//  Student.GENDER = "gender";  // ReferenceError: gender is not defined
 
 //   console.log(Student);  // we can't add new property in constructor like this
 
-//   student2.GENDER ="FeMale" // this possible 
+//   student2.GENDER ="FeMale" // this possible
 //   console.log(student2);  // output => Student { NAME: 'Kanchan', CLASS: 10, AGE: 14, ROLLno: 38 ,  GENDER: 'FeMale'}.
-
 
 // //*********************************************************************************************************************************************************/
 
 //############################################################# Prototype in js#####################################################################
 
-// // Prototype in js => used for add new property in the constructor. || in Js protoype is supperclass  
+// // Prototype in js => used for add new property in the constructor. || in Js protoype is supperclass
 
 // Student.prototype.nationality =" Indian";
 // console.log(student1.nationality); // output :  Indian
 // console.log(student2.nationality); // output :  Indian
 
-
 // let student3 = new Student("shyam", 12, 16, 1991110011002);
 // console.log(student3.nationality); //// output :  Indian
 
-
 // // ################################################## Nested object in Js ############################################################\\
 
-// // object inside objects 
+// // object inside objects
 
 // const user = {
 //                id : "iam_NightBot",
@@ -212,7 +198,7 @@ eg: let obj ={name : "devesh"}
 
 // // how access =>
 //  console.log(user.info);
- /* output=>
+/* output=>
     {
   name: 'Rahul roy',
   age: 26,
@@ -227,18 +213,16 @@ eg: let obj ={name : "devesh"}
   */
 //  console.log(user.info.address.fun()); // output => this function  belongs to iam_NightBot user
 
+// ############################################################### Hoisting In JS ###################################################################
 
- // ############################################################### Hoisting In JS ###################################################################
- 
 // hosting  js machnism where variable and function decleration  moved at top from their scope by interpreter.
 
- // hoisting with function =>
+// hoisting with function =>
 
+//  hello(); // output => hello this is hoiesting example in js
 
-//  hello(); // output => hello this is hoiesting example in js 
- 
 //  function hello(){
-//    console.log("hello this is hoiesting example in js"); 
+//    console.log("hello this is hoiesting example in js");
 //  }
 /*
  // it will not give the error becuse => how its works at the of inperpretaion function decleartion come at top
@@ -288,8 +272,6 @@ x=7;
 
 // const z =2;
 
-
-
 // ################################################################ Strict mode in js #########################################################################
 
 // x =5;
@@ -311,4 +293,4 @@ x=7;
 // Now it gives error
 // "use strict";
 // x =6;
-// console.log(x); // output => ReferenceError: x is not defined  
+// console.log(x); // output => ReferenceError: x is not defined

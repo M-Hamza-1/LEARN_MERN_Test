@@ -9,22 +9,25 @@
   <body>
    <!-- setTimeout -->   
    <h1>Count Down</h1>
+   <button style="border: 2px solid rgb(28, 1, 1); color : white; background-color: red;" onclick="stop()" >Stop-me</button>
   </body>
   <script>
 
-let id  = setInterval(myFun1 , 1000)  
+let id  = setInterval(myFun1 , 1000)   // returns the id of setinterval function.
 let count =0;
 function myFun1() {
   
- document.querySelector('h1').innerText =   count++;
+ document.querySelector('h1').innerText = count++;
 }
 
 setTimeout(myFun , 12000);
-function myFun() {
 
+function stop(){
 clearInterval(id);
 document.querySelector('h1').innerText = "< hello world ! >"
-
 }
+
+
+
   </script>
 </html>

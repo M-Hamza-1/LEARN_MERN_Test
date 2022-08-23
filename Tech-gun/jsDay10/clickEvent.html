@@ -17,26 +17,38 @@
       width: auto;
       height: auto;
     }
+    .btn2 {
+      border: 2px solid hwb(16 5% 6%);
+      border-radius: 3px;
+      color: black;
+      background-color: violet;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: auto;
+      height: auto;
+    }
+
   </style>
   <body>
     <div>
         <!-- with inline event function -->
-      <!-- <button onclick="clickme()" class="btn">Click-me</button> -->
+      <button onclick="clickme()" class="btn">Click-me</button><br>
 
        <!-- using evenListener -->
-      <button class="btn">Click-me</button>
+      <button class="btn2">Click-me</button>
     </div>
     <script>
         // with function registraion and inline events
        function clickme() {
-        let btn = document.querySelector("div").innerHTML;
+        let btn = document.querySelector("button").innerHTML;
+      
         let elm = document.createElement("div");
         document.querySelector("body").appendChild(elm);
-        elm.innerHTML = btn;
+        elm.innerHTML =   " <button onclick='clickme()' class='btn'>Click-me</button><br>"
       }
 
 //   with EventListener and anonymous function =>
-let btn = document.querySelector(".btn");
+let btn = document.querySelector(".btn2");
 btn.addEventListener("click" , function(){
     alert("button is clicked");
 })

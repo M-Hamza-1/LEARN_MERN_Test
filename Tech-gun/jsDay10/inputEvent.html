@@ -11,9 +11,11 @@
     <textarea name="text" id="input" cols="30" rows="10"></textarea>
     <script>
         // focus => high-light the text area 
+        let count=0;
         let elm = document.getElementById("input");
         elm.addEventListener("focus" , function(e){
-              elm.style.background = "aqua"; 
+              elm.style.background = "lightskyblue"; 
+           
         });
 
 
@@ -23,9 +25,9 @@
                 elm.style.background = "white"; 
         });
 
-        //change  => used for tracking the change on the text area
+        //change  => used for tracking the change on the text area once stop then show
             elm.addEventListener("change" , function(){
-                // console.log(this.value);
+                console.log(this.value);
         });
 
 
@@ -33,6 +35,8 @@
           //input  => used for tracking the change on the text area in realtime
          elm.addEventListener("input" , function(){
                 console.log(this.value);
+                
+              console.log(count++);
         });
 
     </script>

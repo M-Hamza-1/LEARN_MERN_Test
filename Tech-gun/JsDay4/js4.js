@@ -121,8 +121,9 @@ str2 = str.lastIndexOf("lastIndexOf"); // check index number from last idx
 console.log(str2); // output : -1 // BECAUSE there is no lastIndexOf in string
 
 // if same more substring available  in string then need give index check from here
-str = "hey indexof This is a lastIndexOf() function in JavaScript ";
-str2 = str.indexOf("lastIndexOf", 10); // provding idx for need  to check after 47  idx number's subtring idx number 
+str =
+  "lastIndexOf lastIndexOf hey indexof This is a lastIndexOf() function in JavaScript ";
+str2 = str.lastIndexOf("lastIndexOf"); // provding idx for need  to check after 47  idx number's subtring idx number 
 console.log(str2); // output : 22 // 
 
 // 6. for removing extra white sapce from string : => String.trim();
@@ -142,7 +143,7 @@ str2 = str.trim();
  str2 = str.replace("my statemnet", "replace() function in Js");
  console.log(str2); // output : hello this replace() function in Js
 
- //9.  if substring value not available in string false  else true : String.inculdes();
+ //9.  if substring value not available in string false  else true : String.includes();
  str = " heya this us includes() from JavaScript";
  str2 = str.includes("hello");
  console.log(str2); // output : false (because there is no hello subtstring value in given string)

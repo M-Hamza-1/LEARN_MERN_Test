@@ -41,10 +41,10 @@
         let div_parent  = document.querySelector("div");
         let body_parent  = document.querySelector("body");
 
-        // btn_child.addEventListener("click" , myFun1 , true); // target is button
-        // div_parent.addEventListener("click" , myFun2 , true);  
+        btn_child.addEventListener("click" , myFun1 , true); // target is button
+        div_parent.addEventListener("click" , myFun2 , true);  
        
-        // body_parent.addEventListener("click" , myFun3 , true); 
+        body_parent.addEventListener("click" , myFun3 , true); 
 
          function myFun1(){
             alert("button is clicked");
@@ -79,10 +79,10 @@
 
          // Edge case => What if i need that order like => body => button => div
          // (pass the "false" as an argument in div)
-         btn_child.addEventListener("click" , myFun1 , true); // target is button
-        div_parent.addEventListener("click" , myFun2 , false);   // do false to body then it will select in end
+        //  btn_child.addEventListener("click" , myFun1 , true); // target is button
+        // div_parent.addEventListener("click" , myFun2 , false);   // do false to body then it will select in end
        
-        body_parent.addEventListener("click" , myFun3 , true); 
+        // body_parent.addEventListener("click" , myFun3 , true); 
 
         /*
          

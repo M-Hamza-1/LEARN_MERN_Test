@@ -1,37 +1,37 @@
-// *******************************************NaN**********************************************\\
+// ******************************************* NaN **********************************************\\
 /*
-int Js NaN is short of   "Not a number" 
-isNaN() methord gives true if number is NaN .. 
-in JS NaN is number that is not legel number..
-isNaN() retrun true if value is NaN.
+ int Js NaN is short of   "Not a number" 
+ isNaN() methord gives true if number is NaN .. 
+ in JS NaN is number that is not legel number..
+ isNaN() retrun true if value is NaN..
 
 */
 
 // Eg: 1 
-// let x,y;   // both variable are  undefined
-// console.log(x-y); //  NaN 
+ // let x,y;   // both variable are  undefined
+ // console.log(x-y); //  NaN 
 
-// // Eg: 2
-// let str = 'hello';
-// console.log(isNaN(str)); // true
+ // // Eg: 2
+ // let str = 'hello';
+ // console.log(isNaN(str)); // true
 
-// // Eg: 3
-// let val0 = 3 , val1 =2; // both has integer value 
-// let ans = isNaN(val0-val1);
-// console.log(ans); // false 
+ // // Eg: 3
+ // let val0 = 3 , val1 =2; // both has integer value 
+ // let ans = isNaN(val0-val1);
+ // console.log(ans); // false 
 
-//************************************************+++********************************************************\\
+ //************************************************+++********************************************************\\
 
 
 
-//************************************************Power of the Digit ***************************************\\
+ //************************************************Power of the Digit ***************************************\\
 
-// using ** double  Astreisk  (Airthmatic operator)==>
+ // using ** double  Astreisk  (Airthmatic operator)==>
 
-// let num = 5;
-// let sqr = num**2;
-// let cube = num **3;
-// console.log(`sqr of ${num} = ${sqr} && cube of ${num} =${cube}`);
+ // let num = 5;
+ // let sqr = num**2;
+ // let cube = num **3;
+ // console.log(`sqr of ${num} = ${sqr} && cube of ${num} =${cube}`);
 
 
 // using Math.pow function
