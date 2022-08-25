@@ -9,18 +9,11 @@ const modalBtn = document.querySelector(".modal-btn");
 const closeBtn = document.querySelector(".close-btn");
 
 modalBtn.addEventListener("click", function () {
-  //   let isClass = modelOverlay.classList.contains("open-modal");
-  //   if (isClass == true) {
-  //     modelOverlay.classList.remove("open-modal"); // remove if available
-  //   } else {
-  //     modelOverlay.classList.add("open-modal"); // add if available
-  //   }
-
-  // another way using toggel() method =>
-  modelOverlay.classList.toggle("open-modal");
+  // add class for toggling
+  modelOverlay.classList.add("open-modal");
 });
 
 // close overLay using close button =>
 closeBtn.addEventListener("click", function () {
-  modelOverlay.classList.toggle("open-modal");
+  modelOverlay.classList.remove("open-modal");
 });
