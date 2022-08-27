@@ -75,15 +75,16 @@ const menu = [
 ];
 
 const SectionCenter = document.querySelector(".section-center");
+const Btncontainer = document.querySelector(".btn-container");
 
+// loading document
 window.addEventListener("DOMContentLoaded", function () {
   displayMenu(menu);
-
-  // convert array-obj to string => join();
+  displayCategoryButton();
 });
 
-function displayMenu() {
-  let displayItem = menu.map(function (itemObj) {
+function displayMenu(menuParameter) {
+  let displayItem = menuParameter.map(function (itemObj) {
     // it will return html with menu array objects value for required inside
     return `<article class="menu-item">
           <img src=${itemObj.img} class="photo" alt=${itemObj.title}>
@@ -96,6 +97,50 @@ function displayMenu() {
          </div>
         </article>`;
   });
+  // convert array to string => join();
   let strArray = displayItem.join("");
   SectionCenter.innerHTML = strArray;
+}
+
+
+// Category button dynamiclly and filtering button property 
+function displayCategoryButton(){
+
+  const Categories = menu.reduce(
+    function (values, value) {
+      if (!values.includes(value.category)) {
+        values.push(value.category);
+      }
+      return values;
+    },
+    ["all"]
+  ); // [all] category is intial value for values other catagory are avilable in the menu array
+
+  const Btncategory = Categories.map(function (catagory) {
+    return `<button class="filter-btn" type="button"data-id =${catagory}>${catagory}</button>`;
+  });
+
+  Btncontainer.innerHTML = Btncategory.join("");
+  const btns = Btncontainer.querySelectorAll(".filter-btn");
+
+  // filtering buttons
+  btns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      const category = e.currentTarget.dataset.id; // using dataset data category setting (index.html as a data-id) and getting
+      const filetrArray = menu.filter(function (arrayItem) {
+        // array random catgory  ==  clicked button category 
+      if (arrayItem.category == category) {
+          return arrayItem;
+        }
+      });
+
+      // now make check for buttons category =>
+
+      if (category == "all") {
+        displayMenu(menu);
+      } else {
+        displayMenu(filetrArray);
+      }
+    });
+  });
 }
