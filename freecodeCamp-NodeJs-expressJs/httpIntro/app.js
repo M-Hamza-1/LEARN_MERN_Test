@@ -1,5 +1,5 @@
 const http = require('http');
-
+// this is http module from Node js . using call back here
 const server = http.createServer((req,res) =>{
   if(req.url ==='/'){
     res.end(`
