@@ -1,3 +1,5 @@
+// this async fs modlue
+
 const {readFile , writeFile} = require('fs');
    console.log("start line 2");
 // call back function using because of async behavior
