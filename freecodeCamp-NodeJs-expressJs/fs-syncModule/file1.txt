@@ -1,0 +1,1 @@
+this is file for readfile sync method in Node js

@@ -1,0 +1,1 @@
+Node will make new write-file1 and this text on it 

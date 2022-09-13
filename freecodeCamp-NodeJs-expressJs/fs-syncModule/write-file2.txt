@@ -1,0 +1,1 @@
+here is the result :This is file2 for readfilesync() method in fs sytem module in Node js  ,this is file for readfile sync method in Node js
