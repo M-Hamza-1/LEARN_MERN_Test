@@ -1,3 +1,6 @@
+// here we learning how to req and res cycle work using http in Node for the taste
+// its way complex than more line of code each time and logics as well. express is solution for establishing a server with ease
+
 const http = require('http');
 const {readFileSync} = require('fs');
 
