@@ -7,7 +7,7 @@ app.use(express.static("./public"));
 
 // now no all work done by app.use(express.static('./public')); afetr pittinh html file also in public folder
 // app.get('/', (req, res) =>{
-//   res.sendFile(path.resolve(__dirname, "./NavProject/index.html")); // using this path of index.html (css and js not loaded) untill  express.static('./public' not use
+//   res.sendFile(path.resolve(__dirname, "./NavProject/index.html")); // using this path of index.html (css and js not loaded) untill  express.static('./public') not use
 // })
 
 app.all("*", (req, res) => {
