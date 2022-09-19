@@ -28,8 +28,8 @@ console.log(first ,"line 10");
     });
 
 
-  });
-});
+//   });
+// });
 console.log("all task are are don with G.E.C  , line 31");
 /**
  * start line 2
