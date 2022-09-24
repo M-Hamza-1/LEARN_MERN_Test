@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const connectDB = require("./connectDB/dB");
-
+const errHnadlerMiddleware = require("./Error-middleware/error-handler");
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -9,6 +9,12 @@ app.get("/", (req, res) => {
     `<h1>Store api <a href="/api/v1/prduction" >/api/v1/prduction</a></h1>`
   );
 });
+
+
+// error handler 
+
+app.use(errHnadlerMiddleware);
+
 const port = 3000;
 const start = () => {
   try {
