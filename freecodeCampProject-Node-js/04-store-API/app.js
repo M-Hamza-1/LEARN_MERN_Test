@@ -2,18 +2,20 @@ const express = require("express");
 const app = express();
 const connectDB = require("./connectDB/dB");
 const errHnadlerMiddleware = require("./Error-middleware/error-handler");
+const getProductsRoute = require("./route/productRoute");
 app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send(
-    `<h1>Store api <a href="/api/v1/prduction" >/api/v1/prduction</a></h1>`
+    `<h1>Store api <a href="/api/v1/production" >/api/v1/prduction</a></h1>`
   );
 });
 
-
+app.use("/api/v1/products", getProductsRoute);
 // error handler 
 
 app.use(errHnadlerMiddleware);
+
 
 const port = 3000;
 const start = () => {
