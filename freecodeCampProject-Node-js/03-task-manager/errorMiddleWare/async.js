@@ -1,4 +1,5 @@
 // used for do not repeat try catch error handlling into controller API
+
 const asyncWrapper = (fn) =>{
 return async (req , res , next) =>{
 try{

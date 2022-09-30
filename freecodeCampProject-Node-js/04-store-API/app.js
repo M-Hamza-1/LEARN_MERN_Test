@@ -3,6 +3,7 @@ const app = express();
 const connectDB = require("./connectDB/dB");
 const errHnadlerMiddleware = require("./Error-middleware/error-handler");
 const getProductsRoute = require("./route/productRoute");
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -17,7 +18,7 @@ app.use("/api/v1/products", getProductsRoute);
 app.use(errHnadlerMiddleware);
 
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const start = () => {
   try {
     connectDB();
