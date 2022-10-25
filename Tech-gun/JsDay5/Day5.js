@@ -88,18 +88,18 @@
 
 
 // 2d array difination and initialize
-// let anime = [
-//   ['Naruto',   'shipuden',  '8.8']
-//  ,['Boruto' ,  'the-gen-z', '7.2'],
-//   ['One-pice', 'skypia',    '8.8']
-// ];
+let anime = [
+  ['Naruto',   'shipuden',  '8.8']
+ ,['Boruto' ,  'the-gen-z', '7.2'],
+  ['One-pice', 'skypia',    '8.8']
+];
 
-// for(let i=0; i<anime.length; i++){
-//   for(let j=0; j<anime[i].length; j++){
-//     console.log(`[${anime[i][j++]} ${anime[i][j++]} ${anime[i][j++]} ]`);
-//   }
-//   console.log("\n");
-// }
+for(let i=0; i<anime.length; i++){
+  for(let j=0; j<anime[i].length; j++){
+    console.log(`[${anime[i][j++]} ${anime[i][j++]} ${anime[i][j++]} ]`);
+  }
+  console.log("\n");
+}
 
 
 //***************************************************************************************************************************************\
