@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: url("img/bg.jpg");
+           background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: white;
+      font-family: 'Baloo Bhai 2', cursive;
+
+    }
+    .header{
+        width: 100%;
+        height: 5rem;
+        /* background-color: black; */
+        padding: 5px;
+        position: relative;
+    }
+    .header--title{
+            /* border: 2px solid black; */
+        height: 88%;
+        position: absolute;
+          margin-left: 20px;
+          padding: 1px;
+          width: 15%;
+          /* background-color: #fff; */
+          
+         
+          
+    }
+    .header--logo{
+        height: 60%;
+        margin-left: 10px;
+        border-radius: 50%;
+        width: 50px;
+        border: 1px solid rgb(149, 18, 18);
+
+        
+    }
+.header--title>h4{
+position: absolute;
+ color: white;
+ top: 1.5rem;
+ font-size: 15px;
+
+}
+.header--nav{
+    display: block;
+    width: 36%;
+    margin: auto;
+      padding: 3px;
+}
+
+uL{
+    padding: 5px;
+       
+   
+}
+.headerList{
+    display: inline;
+       padding: 10px;
+       list-style: none;
+        /* height: 10px; */
+            padding: 20px;
+          
+
+}
+.headerList>a{
+      text-decoration: none;
+      color: white;
+    
+          padding: 5px;
+    font-size: 15px;
+    background-color: #8805ec;
+    border-radius: 5px;
+      
+     
+}
+ .header--contact{
+      position: absolute;
+      left: 80%;
+      top: 12px;
+      padding: 10px;
+        }
+.contact{
+          padding: 5px;
+    margin-left: 22px;
+    border-radius: 8px;
+    color: white;
+      background-color: #880be8dd;
+      font-size: 15px;
+      border: none;
+        }
+
+</style>
+<body>
+    <header class="header">
+      <div class="header--title">
+        <img src="./img/logo.jpg" alt="" class="header--logo">
+        <h4 >MyAnime</h4>
+      </div>  
+        <nav class="header--nav">
+               <ul>
+                <li class="headerList"><a href="http://">Home</a></li>
+                <li class="headerList"><a href="http://">latest</a></li>
+                <li class="headerList"><a href="http://">Genre</a></li>
+                <li class="headerList"><a href="http://">About</a></li>
+               </ul>
+ 
+        </nav>
+        
+        <div class="header--contact">
+            <button class="email contact">
+                Email
+            </button>
+            <button class="contact contact">
+                Contact us
+            </button>
+        </div>
+
+    </header>
+</body>
+</html>
