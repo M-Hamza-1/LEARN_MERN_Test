@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="section">
       <div className="section--center">
-           <h3 style={{fontSize : "17px", margin : "1px"}}>Day 89 #100DaysofCode</h3> 
+           <h3 >Day 90 #100DaysofCode</h3> 
         <h2>Questions And Answers About Login</h2>
        {data && data.map((item , index) =>{
          return (

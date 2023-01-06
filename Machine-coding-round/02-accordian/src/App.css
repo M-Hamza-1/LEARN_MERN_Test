@@ -7,6 +7,11 @@ justify-content: center;
 
 
 }
+.section--center>h3{
+
+  font-size: 17px;
+   margin : 1px;
+}
 .section--center>h2{
   color:rgba(138, 18, 237, 0.975);
   font-size: xx-large;
