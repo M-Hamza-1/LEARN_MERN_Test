@@ -21,7 +21,8 @@ function UseRef() {
   return (
     <div>
    <input type="text" className="name" value={name}  onChange ={(e) => setName(() => e.target.value)} />
-   <div className="renderCounter">{countRender.current}</div>
+   <h1>my name is {name}</h1>
+   <div className="renderCounter">Elem rendering :{countRender.current}</div>
 
     </div>
   )
