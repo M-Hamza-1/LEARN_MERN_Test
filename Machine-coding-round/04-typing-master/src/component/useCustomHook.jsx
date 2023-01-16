@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect  ,  useRef} from "react";
 // this is a custom Hook
-function useCustomHook() {
+function useCustomHook(START_TIME =10) {
   const [text, setText] = useState();
   const [wordCount, setWordCount] = useState(0);
   const [isStart, setIsStart] = useState(false);
-  const [timeReamning, setTimereaming] = useState(5);
-
+  const [timeReamning, setTimereaming] = useState(START_TIME);
+   const refLink  = useRef(null);
   function handleChange(e) {
     const { value } = e.target;
     setText(value);
@@ -19,12 +19,17 @@ function useCustomHook() {
   function handleClick() {
     setIsStart(true);
     setText("");
-    setTimereaming(5);
+    // becuase while diable focus cant occures
+    refLink.current.disbale = false;
+    refLink.current.focus();
+    setTimereaming(START_TIME);
+    setWordCount(0);
   }
 
   function endGame() {
     setIsStart(false);
     setWordCount(wordCounter(text));
+    
   }
 
   useEffect(() => {
@@ -43,6 +48,7 @@ function useCustomHook() {
     handleClick,
     wordCount,
     isStart,
+    refLink
   };
 }
 
