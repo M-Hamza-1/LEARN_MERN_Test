@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(33, 33, 33);
+  font-family: "Poppins";
+}
+
+:root {
+  --primary-color: rgb(245,
+       101,
+       57);
+  --secondry-color: rgb(33,33,33);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  color: var(--secondry-color);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.navbar .logo span {
+  color: rgb(254, 248, 248);
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar nav {
+  display: none;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+.section {
+  padding: 1em;
+}/*# sourceMappingURL=main.css.map */
