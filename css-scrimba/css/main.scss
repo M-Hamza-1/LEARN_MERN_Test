@@ -1,7 +1,7 @@
 body{
      margin: 0px;
      padding: 0px;
-     // background-color: rgb(245, 101, 57);
+     background-color: rgb(245, 101, 57);
      background-color: rgb(33,
           33,
           33);
@@ -26,6 +26,9 @@ body{
           }
         
      }
+           .mobile-menu {
+                cursor: pointer;
+           }
       
      .container {
                  display: flex;
@@ -34,10 +37,7 @@ body{
                       nav {
                          display: none;
                       }
-                      .mobile-menu{
-                         cursor: pointer;
-                      }
-
+                    
     }
 
     .section{
