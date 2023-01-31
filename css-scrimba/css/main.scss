@@ -1,4 +1,6 @@
 body{
+     overflow-x: hidden;
+     width: 100vw;
      margin: 0px;
      padding: 0px;
      background-color: rgb(245, 101, 57);
@@ -28,11 +30,12 @@ body{
      }
            .mobile-menu {
                 cursor: pointer;
+               
            }
       
      .container {
                  display: flex;
-              place-content: space-between;
+              justify-content: space-between;
             }
                       nav {
                          display: none;
@@ -40,7 +43,68 @@ body{
                     
     }
 
-    .section{
-     padding: 1em;
+    section{
+     padding: 5em 2em;
     }
+
+    a{
+     color: rgb(219, 199, 199);
+    }
+
+    ul{
+     text-decoration: none;
+     margin: 0px;
+     padding: 0px;
+    }
+
+        .hero{
+          text-align: center;
+
+
+          .left-col{
+               .subhead{
+                    color: rgb(219, 206, 206);
+                    text-transform: uppercase;
+                    letter-spacing: .2rem;
+                    font-weight: bold;
+                    
+               }
+               h1{
+                 font-size: 2.5em;   
+                 line-height: 1.2em;
+                  color: var(--primary-color);
+                   margin-top: .2rem;
+               }
+              
+                        .primary-cta {
+                             text-decoration: none;
+                             display: inline-block;
           
+                             padding: .6em 1.5em;
+                           
+                            font-size: 1.3em;
+                            background-color: var(--primary-color);
+                              border: none;
+                              border-radius: 5em;
+                              font-weight: bold;
+                              color: var(--secondry-color);
+
+                            }
+                                            .primary-cta:hover {
+                                                 background-color: var(--secondry-color);
+                                                 color: white;
+                                                 border: 2px solid white;
+                                            }
+                    .watch-video-cta{
+                         display: block;
+                         margin-top: 1.2em;
+                    }
+                    img{
+                       margin-right: .5em;  
+                       
+
+                    }
+
+          }
+        }
+        
