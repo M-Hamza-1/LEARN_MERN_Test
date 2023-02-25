@@ -6,7 +6,7 @@ body {
   height: 730.49px;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   align-items: center;
   margin: 40px auto;
   border-radius: 15.9662px 15.9662px 0px 0px;
@@ -156,7 +156,7 @@ body {
   font-size: 14.1538px;
   line-height: 17px;
   /* identical to box height */
-
+ 
   margin-right: 41px;
   text-align: center;
   display: flex;
