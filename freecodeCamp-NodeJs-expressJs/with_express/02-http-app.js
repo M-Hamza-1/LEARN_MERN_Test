@@ -20,7 +20,7 @@ const server = http.createServer((req ,res) =>{
    res.end();
    // about route 
 } else if(url === '/about'){
-    res.writeHead(200, { "content-type": "text/plain" }); // here Mime type is plan whaterver kinda data swe send to clint using this rout it will convert plain text auto matically
+    res.writeHead(200, { "content-type": "text/plain" }); // here Mime type is plain, so whaterver kinda data we send to clint using this route it will convert plain text auto matically
     res.write("<h1>about page</h1>");
     res.end();
     // req for styles 

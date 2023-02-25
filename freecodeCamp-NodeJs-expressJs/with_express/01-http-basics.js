@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
   // home page (route)
   if (url == "/") {
     //Mime type
-    res.writeHead(200, { "content-type": "text/html" }); // settimg header META data (status code , type of content : MIME type )
+    res.writeHead(200, { "content-type": "text/html" }); // setting header META data (status code , type of content : MIME type )
     res.write("<h1>Home page</h1>"); // sending response as html type content
     res.end(); // disconnecting the connection
   }

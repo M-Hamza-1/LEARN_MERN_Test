@@ -1,0 +1,214 @@
+body {
+  background-color: rgb(247, 238, 238);
+}
+.Task-Conatiner {
+  width: 945px;
+  height: 730.49px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  align-items: center;
+  margin: 40px auto;
+  border-radius: 15.9662px 15.9662px 0px 0px;
+  box-sizing: border-box;
+}
+.Task-Container__img {
+  width: 945px;
+  height: 482.98px;
+  border-radius: 15.9662px 15.9662px 0px 0px;
+  position: relative;
+}
+.popup__close {
+  /* position: absolute; */
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 927px;
+  top: -12px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  /* backdrop-filter: blur(2px); */
+}
+
+.popup__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15.9662px 15.9662px 0px 0px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6.58824px 9.88235px;
+  gap: 8.24px;
+  position: absolute;
+  width: 58.47px;
+  height: 23.88px;
+  left: 90px;
+  top: 438px;
+  color: white;
+}
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+  color: white !important;
+  font-family: "Montserrat" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 8.23529px !important;
+  line-height: 10px !important;
+  /* identical to box height */
+
+  text-align: center !important;
+}
+
+.popup__download {
+  position: absolute;
+  width: 157px;
+  height: 39px;
+  left: 768px;
+  top: 423px;
+  color: white;
+  border: none;
+  background: #3cb46e;
+  border-radius: 4px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+}
+
+.Task-Container__content {
+  background: #232323;
+  width: 100%;
+  height: 247.51px;
+  color: white;
+}
+.userDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  margin: 25px 15px 20px 33px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.userName {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 35px;
+  margin-top: -18px;
+}
+.userName > p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.userName_i {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 5px;
+  color: #a7a7a7;
+}
+
+.userLinks {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  text-align: center;
+  margin: 5px;
+  color: #a7a7a7;
+}
+.userLink__i {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  font-size: 1rem;
+}
+.userLikes {
+  font-weight: 700;
+  font-size: 14.1538px;
+  line-height: 17px;
+  /* identical to box height */
+
+  margin-right: 41px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #858484;
+}
+.span-2 {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+.tags > h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  color: #e5e5e5;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.tag__text {
+  width: 100%;
+}
+.title-div {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  margin-left: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+.tags-title {
+  width: fit-content;
+
+  height: 1.8vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  gap: 10px;
+  color: black;
+  background: #ececec;
+  border-radius: 4px;
+  padding: 6px;
+  margin-top: -5px;
+
+  overflow: hidden;
+}
