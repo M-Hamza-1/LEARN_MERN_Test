@@ -11,3 +11,4 @@
   *Express-Js
 * FireBase
 * MongoDB
+* SQL
