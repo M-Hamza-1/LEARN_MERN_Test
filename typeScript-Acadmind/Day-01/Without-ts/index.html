@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name ="num1" placeholder="enter a numbe" id="num1">
+    <input type  ="number" name="num2" placeholder="enter a number" id="num2">
+    <button>add!</button>
+   
+</body>
+ <!-- <script src = "./Script.js"></script> -->
+ <script>
+   function add1(){
+    var num1 = document.querySelector("#num1").value;
+    var num2  = document.querySelector("#num2").value;  
+    console.log(num1+num2); // this will concatinate the two numbers because the input type number always return a string
+   }
+
+   // solution for the above problem
+   function add(){
+    var num1  = document.getElementById("num1").value;
+    var num2  =  document.querySelector("#num2").value;
+    if(typeof(num1) == "number" && typeof(num2) == "number"){ // we are using typeof to check the type of the variable if use typeScript we dont need to use this if statement beasue type can be defined in typeScript
+        console.log(num1+num2);
+   }
+   else{
+    console.log(+num1 + +num2); // this will convert the string to number and then add them as numbers
+   }
+    }
+
+ </script>
+</html>
