@@ -9,6 +9,7 @@
 //  let printResult = true; // here typescript will infer the type of printResult as boolean because we have assigned a boolean value to it
 //  let resultPhrase = "Result is : "; // here typescript will infer the type of resultPhrase as string because we have assigned a string value to it
 
+
 let person = {
     name : "Maximilian", // here typescript will infer the type of name as string because we have assigned a string value to it
     age : 30 ,// here typescript will infer the type of age as number because we have assigned a number value to it
