@@ -48,7 +48,7 @@ var employee = {
 //     age: 30
 // }; // this is also valid
 printEmployeeInfo(employee); // Max 30
-// 5 Array : [1, 2, 3] any JS array, type can be flexible or strict (regarding the element types)
+// 5 Array : [1, 2, 3]   any JS array, type can be flexible or strict (regarding the element types) eg  [1, 2, 3] or ['a', 'b', 'c'] or [1, 'a', true] or any other combination
 // eg:
 function printArray(arr) {
     for (var i = 0; i < arr.length; i++) {
@@ -88,6 +88,7 @@ var person = {
     hobbies: ['Sports', 'Cooking'],
     role: Role.ADMIN
 };
+//    Role.ADMIN = 2 // !! Type error !! cannot assign value to enum once it is declared Because enum is a constant AND READ_ONLY = true // !! Type error !! cannot assign value to enum once it is declared Because enum is a constant
 if (person.role === Role.ADMIN) {
     console.log('is admin');
 }
@@ -97,3 +98,10 @@ else if (person.role === Role.READ_ONLY) {
 else if (person.role === Role.AUTHOR) {
     console.log('is author');
 }
+// 8 Any : * avoid * any kind of value, no specific type assignment eg: let value: any; value = 5; value = 'Max'; value = true; same as JS
+// eg:
+var value; // * avoid *
+value = 5;
+value = 'Max';
+value = true;
+console.log(value); // true // same as JS

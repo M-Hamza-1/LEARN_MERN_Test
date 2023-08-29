@@ -68,7 +68,7 @@ let employee = {
 printEmployeeInfo(employee); // Max 30
 
 
-// 5 Array : [1, 2, 3] any JS array, type can be flexible or strict (regarding the element types)
+// 5 Array : [1, 2, 3]   any JS array, type can be flexible or strict (regarding the element types) eg  [1, 2, 3] or ['a', 'b', 'c'] or [1, 'a', true] or any other combination
 
 // eg:
 function printArray(arr: string[]) {
@@ -118,8 +118,9 @@ const person = {
     hobbies: ['Sports', 'Cooking'],
     role: Role.ADMIN
 };
-
+//    Role.ADMIN = 2 // !! Type error !! cannot assign value to enum once it is declared Because enum is a constant AND READ_ONLY = true // !! Type error !! cannot assign value to enum once it is declared Because enum is a constant
 if (person.role === Role.ADMIN) {
+   
     console.log('is admin');
 }
 else if (person.role === Role.READ_ONLY) {
@@ -138,3 +139,29 @@ value = 5;
 value = 'Max';
 value = true;
 console.log(value); // true // same as JS
+
+
+ // 9 Union :  union allows us to combine different types in one type eg: let value: number | string; value = 5; value = 'Max'; value = true; // !! Type error !! Type 'true' is not assignable to type 'string | number'. ts(2322) // same as JS
+
+// eg:
+let value2: number | string; // union allows us to combine different types in one type
+value2 = 5;
+value2 = 'Max';
+// value2 = true; // !! Type error !! Type 'true' is not assignable to type 'string | number'. ts(2322)
+
+console.log(value2); // Max // same as JS
+
+// with function
+ function combine(value1 : number | String , value2 : number | String | boolean){
+
+    let result;
+    if(typeof value1 === 'number' && typeof value2 === 'number'){
+        result = value1 + value2;
+    }
+    else{
+        result = value1.toString() + value2.toString();
+    }
+    return result;
+ }
+
+    console.log(combine(1, "1")); // 11
