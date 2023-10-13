@@ -7,7 +7,7 @@
   // function hello() {
   //   var y = "hello function";
   // }
-  // hello();
+  // hello(); 
   // alert(y); 
    // it will give error because y has hello function level scope only
 

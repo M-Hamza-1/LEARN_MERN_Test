@@ -78,10 +78,10 @@ console.log(str.length); // output : 18
 
 // 2. Concatenate a string : String.concat();
 
-str = "hello";
+str = "hello ";
 console.log(str.concat(" world !")); // output : hello world !
 let str2 = "world-2";
-str = str.concat(" ", str2);
+ str = str.concat(" ", str2);
 console.log(str); // output : hello world-2
 
 // 3. find sub string of string : String.substr(idx , idx);

@@ -157,6 +157,8 @@ console.log(value2); // Max // same as JS
     let result;
     if(typeof value1 === 'number' && typeof value2 === 'number'){
         result = value1 + value2;
+    } else if(typeof value1 === 'number' && typeof value2 === 'boolean'){
+         result = value1 + +value2;
     }
     else{
         result = value1.toString() + value2.toString();
@@ -164,4 +166,4 @@ console.log(value2); // Max // same as JS
     return result;
  }
 
-    console.log(combine(1, "1")); // 11
+    console.log(combine(1, true)); // 2

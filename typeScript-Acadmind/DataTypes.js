@@ -105,3 +105,25 @@ value = 5;
 value = 'Max';
 value = true;
 console.log(value); // true // same as JS
+// 9 Union :  union allows us to combine different types in one type eg: let value: number | string; value = 5; value = 'Max'; value = true; // !! Type error !! Type 'true' is not assignable to type 'string | number'. ts(2322) // same as JS
+// eg:
+var value2; // union allows us to combine different types in one type
+value2 = 5;
+value2 = 'Max';
+// value2 = true; // !! Type error !! Type 'true' is not assignable to type 'string | number'. ts(2322)
+console.log(value2); // Max // same as JS
+// with function
+function combine(value1, value2) {
+    var result;
+    if (typeof value1 === 'number' && typeof value2 === 'number') {
+        result = value1 + value2;
+    }
+    else if (typeof value1 === 'number' && typeof value2 === 'boolean') {
+        result = value1 + +value2;
+    }
+    else {
+        result = value1.toString() + value2.toString();
+    }
+    return result;
+}
+console.log(combine(1, true)); // 2

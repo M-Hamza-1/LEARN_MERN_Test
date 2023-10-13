@@ -8,28 +8,25 @@
   </head>
   <body>
     <ul>
-      <h1>Ths is headding 1</h1>
+      <h1>This is headding 1</h1>
       <div id="div1">
         <h1>Ths is headding 2</h1>
         <h1>Ths is headding 3</h1>
         <h1>Ths is headding 4</h1>
       </div>
     </ul>
-    <script>
+
+  </body>
+      <script>
 // ElementByTagName :
 let div = document.getElementById("div1");  // selecting the div object  using documnet object.
 let elm = div.getElementsByTagName("h1"); // now using div objects child
 for(let i=0; elm.length; i++){
+
+
     elm[i].innerHTML =`<p${i+1}> Hello this paragraph ${i+1} </p${i+1}>`
 }
 
-/*
-    output : 
-Ths is headding 1
-Hello this paragraph 1
-Hello this paragraph 2
-Hello this paragraph 3
- * /
+
     </script>
-  </body>
 </html>
