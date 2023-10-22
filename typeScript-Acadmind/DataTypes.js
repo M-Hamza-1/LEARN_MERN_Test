@@ -48,6 +48,9 @@ var employee = {
 //     age: 30
 // }; // this is also valid
 printEmployeeInfo(employee); // Max 30
+function printEmployeeInfo2(emp) {
+    console.log(emp.name + " " + emp.age);
+}
 // 5 Array : [1, 2, 3]   any JS array, type can be flexible or strict (regarding the element types) eg  [1, 2, 3] or ['a', 'b', 'c'] or [1, 'a', true] or any other combination
 // eg:
 function printArray(arr) {
@@ -127,3 +130,37 @@ function combine(value1, value2) {
     return result;
 }
 console.log(combine(1, true)); // 2
+console.log(combine("hello", 3434));
+// >>>>>>>>>>>>>>>>>>>>>>>>>  union with literal types <<<<<<<<<<<<<<<<<<<<<<<<<<
+// eg: literal types   =>  literal types are types that allow us to specify exact values
+// eg:  let resultType = "as-number" | "as-string"; // literal types are types that allow us to specify exact values
+function combine2(val1, val2, resultType) {
+    if (typeof val1 === "number" && typeof val2 === "number" && resultType === "as-number") {
+        return val1 + val2;
+    }
+    else if (typeof val2 === "number" && typeof val1 === "string" && resultType === "as-string") {
+        return +val2 + val1;
+    }
+    else {
+        return val1.toString() + val2.toString();
+    }
+}
+console.log(combine2("hello", 2, "as-number")); // 2hello
+console.log(combine2("hello", 2, "as-string")); // hello2
+console.log(combine2(1, 2, "as-number")); // 3
+console.log(combine2("hello", "world", "as-string")); // helloworld
+function combine3(val1, val2, resultType) {
+    if (typeof val1 === "number" && typeof val2 === "number" && resultType === "as-number") {
+        return val1 + val2;
+    }
+    else if (typeof val2 === "number" && typeof val1 === "string" && resultType === "as-string") {
+        return +val2 + val1;
+    }
+    else {
+        return val1.toString() + val2.toString();
+    }
+}
+console.log(combine3("hello", 2, "as-number")); // 2hello
+console.log(combine3("hello", 2, "as-string")); // hello2
+console.log(combine3(1, 2, "as-number")); // 3
+// console.log(combine3("hello" , "world" , "as-string")); // !! Type error !! Argument of type '"as-string"' is not assignable to parameter of type 'ConversionDescriptor'.ts(2345) // helloworld

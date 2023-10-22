@@ -40,19 +40,25 @@
     <script>
         // with function registraion and inline events
        function clickme() {
-        let btn = document.querySelector("button").innerHTML;
+        let btn = document.querySelector(".btn")
       
         let elm = document.createElement("div");
+    // add text content using setAttribute
+
         document.querySelector("body").appendChild(elm);
         elm.innerHTML =   " <button onclick='clickme()' class='btn'>Click-me</button><br>"
       }
 
 //   with EventListener and anonymous function =>
-let btn = document.querySelector(".btn2");
-btn.addEventListener("click" , function(){
-    alert("button is clicked");
-})
+let btn2 = document.querySelector(".btn2")
 
+btn2.addEventListener("click" , function(){
+  let elm = document.createElement("div");
+ let body = document.querySelector("body");
+ body.appendChild(elm);
+ elm.innerHTML = " <button class='btn2'>Click-me</button><br>"
+
+})
 
 
     </script>
