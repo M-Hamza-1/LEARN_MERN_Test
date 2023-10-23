@@ -241,7 +241,23 @@ console.log(value2); // Max // same as JS
         
     
 
-     
+     // unknown type => unknown is a type that is more restrictive than any means . means it is more strict than any type
+
+
+        let userInput : unknown;
+        let userName1 : string;
+
+        userInput = 5;
+        userInput = "Max";
+         userName1 = userInput; // !! Type error !! Type 'unknown' is not assignable to type 'string'.ts(2322) . it can be assigned to any type but not to string or number or boolean or any other type
+
+         // but in any type it is possible
+            let userInput2 : any;
+            let userName2 : string;
+
+            userInput2 = 5;
+
+            userName2 = userInput2; // no error in any type
 
    
     

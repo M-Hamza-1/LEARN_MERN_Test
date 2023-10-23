@@ -92,3 +92,12 @@ function  printResult3(num: number) {
 
 val4( 2 , 3 , printResult3);  // passing argument as a callback function and values
 
+
+
+// never type in TS => it is a type where we never return anything
+
+function generateError(message: string, code: number): never {
+     throw {message : message , errorCode : code}; // it will never return anything because it crash the script. and program will stop here thats why it is never type not void and undefined
+}
+
+generateError('An error occurred!', 500); // An error occurred! 500
