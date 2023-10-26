@@ -12,4 +12,7 @@
   "dependencies": {
     "lite-server": "^2.6.1"
   }
+  "exclude": [
+    "analytics.ts",
+  ],
 }
